@@ -1,0 +1,7 @@
+python -m pip install azure-identity openai pydantic pypdf networkx pyvis
+
+python kg_pipeline.py helix_robotics_test.pdf
+
+python kg_pipeline.py helix_robotics_test.pdf
+
+python kg_rag.py "Who is the CTO of Helix Robotics?"
