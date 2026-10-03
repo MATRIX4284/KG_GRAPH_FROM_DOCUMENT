@@ -1,3 +1,6 @@
+pip install openai pydantic azure-identity pypdf
+python -m pip install azure-identity openai
+python -m pip install pydantic pypdf networkx pyvis
 python -m pip install azure-identity openai pydantic pypdf networkx pyvis
 
 python kg_pipeline.py helix_robotics_test.pdf
