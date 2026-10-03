@@ -1,0 +1,1050 @@
+[
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "is_a",
+    "object": "robotics company",
+    "object_type": "Concept",
+    "evidence": "Helix Robotics Corp. (\"Helix\") is a robotics company"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "headquartered_in",
+    "object": "Austin, Texas",
+    "object_type": "Location",
+    "evidence": "headquartered in Austin, Texas"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "founded_in_year",
+    "object": "2014",
+    "object_type": "Date",
+    "evidence": "It was founded in\n2014"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "founded_by",
+    "object": "Maya Okafor",
+    "object_type": "Person",
+    "evidence": "founded in\n2014 by Dr. Maya Okafor"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "founded_by",
+    "object": "Daniel Reyes",
+    "object_type": "Person",
+    "evidence": "founded in\n2014 by Dr. Maya Okafor and Daniel Reyes"
+  },
+  {
+    "subject": "Maya Okafor",
+    "subject_type": "Person",
+    "predicate": "met_while_studying_at",
+    "object": "Carnegie Mellon University",
+    "object_type": "Organization",
+    "evidence": "who met while studying mechanical engineering at\nCarnegie Mellon University"
+  },
+  {
+    "subject": "Daniel Reyes",
+    "subject_type": "Person",
+    "predicate": "met_while_studying_at",
+    "object": "Carnegie Mellon University",
+    "object_type": "Organization",
+    "evidence": "who met while studying mechanical engineering at\nCarnegie Mellon University"
+  },
+  {
+    "subject": "Maya Okafor",
+    "subject_type": "Person",
+    "predicate": "studied_field",
+    "object": "mechanical engineering",
+    "object_type": "Concept",
+    "evidence": "studying mechanical engineering at\nCarnegie Mellon University"
+  },
+  {
+    "subject": "Daniel Reyes",
+    "subject_type": "Person",
+    "predicate": "studied_field",
+    "object": "mechanical engineering",
+    "object_type": "Concept",
+    "evidence": "studying mechanical engineering at\nCarnegie Mellon University"
+  },
+  {
+    "subject": "Maya Okafor",
+    "subject_type": "Person",
+    "predicate": "serves_as",
+    "object": "Chief Executive Officer",
+    "object_type": "Role",
+    "evidence": "Okafor serves as Chief Executive Officer"
+  },
+  {
+    "subject": "Daniel Reyes",
+    "subject_type": "Person",
+    "predicate": "held_role_until_year",
+    "object": "Chief Technology Officer;2021",
+    "object_type": "Role+Date",
+    "evidence": "Reyes held the role of Chief\nTechnology Officer until 2021"
+  },
+  {
+    "subject": "Daniel Reyes",
+    "subject_type": "Person",
+    "predicate": "stepped_down_in_year",
+    "object": "2021",
+    "object_type": "Date",
+    "evidence": "until 2021, when he stepped down"
+  },
+  {
+    "subject": "Daniel Reyes",
+    "subject_type": "Person",
+    "predicate": "chairs",
+    "object": "Helix Robotics Corp. advisory board",
+    "object_type": "Organization",
+    "evidence": "to chair the company's advisory board"
+  },
+  {
+    "subject": "Maya Okafor",
+    "subject_type": "Person",
+    "predicate": "worked_as",
+    "object": "research scientist",
+    "object_type": "Role",
+    "evidence": "Before founding Helix, Dr. Okafor worked as a research scientist"
+  },
+  {
+    "subject": "Maya Okafor",
+    "subject_type": "Person",
+    "predicate": "employed_by",
+    "object": "Northwind Labs",
+    "object_type": "Organization",
+    "evidence": "worked as a research scientist at Northwind Labs"
+  },
+  {
+    "subject": "Northwind Labs",
+    "subject_type": "Organization",
+    "predicate": "located_in",
+    "object": "Boston",
+    "object_type": "Location",
+    "evidence": "Northwind Labs, a Boston-based\nresearch institute"
+  },
+  {
+    "subject": "Northwind Labs",
+    "subject_type": "Organization",
+    "predicate": "specializes_in",
+    "object": "autonomous systems",
+    "object_type": "Concept",
+    "evidence": "research institute specializing in autonomous systems"
+  },
+  {
+    "subject": "Maya Okafor",
+    "subject_type": "Person",
+    "predicate": "holds_degree",
+    "object": "PhD in robotics",
+    "object_type": "Degree",
+    "evidence": "She holds a PhD in robotics"
+  },
+  {
+    "subject": "Maya Okafor",
+    "subject_type": "Person",
+    "predicate": "degree_from",
+    "object": "Carnegie Mellon University",
+    "object_type": "Organization",
+    "evidence": "PhD in robotics from Carnegie\nMellon University"
+  },
+  {
+    "subject": "Maya Okafor",
+    "subject_type": "Person",
+    "predicate": "born_in",
+    "object": "Lagos, Nigeria",
+    "object_type": "Location",
+    "evidence": "was born in Lagos, Nigeria"
+  },
+  {
+    "subject": "Priya Natarajan",
+    "subject_type": "Person",
+    "predicate": "appointed_role_in_year",
+    "object": "Chief Technology Officer;2021",
+    "object_type": "Role+Date",
+    "evidence": "In 2021, Priya Natarajan was appointed Chief Technology Officer"
+  },
+  {
+    "subject": "Priya Natarajan",
+    "subject_type": "Person",
+    "predicate": "reports_to",
+    "object": "Maya Okafor",
+    "object_type": "Person",
+    "evidence": "Natarajan\nreports directly to the CEO"
+  },
+  {
+    "subject": "Priya Natarajan",
+    "subject_type": "Person",
+    "predicate": "previously_led",
+    "object": "computer vision team",
+    "object_type": "Concept",
+    "evidence": "She previously led the computer\nvision team"
+  },
+  {
+    "subject": "Priya Natarajan",
+    "subject_type": "Person",
+    "predicate": "employed_by",
+    "object": "Orbital Dynamics",
+    "object_type": "Organization",
+    "evidence": "computer\nvision team at Orbital Dynamics"
+  },
+  {
+    "subject": "Orbital Dynamics",
+    "subject_type": "Organization",
+    "predicate": "is_a",
+    "object": "satellite imaging company",
+    "object_type": "Concept",
+    "evidence": "Orbital Dynamics, a satellite imaging company"
+  },
+  {
+    "subject": "Orbital Dynamics",
+    "subject_type": "Organization",
+    "predicate": "located_in",
+    "object": "Denver, Colorado",
+    "object_type": "Location",
+    "evidence": "satellite imaging company based in Denver, Colorado"
+  },
+  {
+    "subject": "Atlas-7",
+    "subject_type": "Product",
+    "predicate": "is_flagship_product_of",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "Helix's flagship product is the Atlas-7"
+  },
+  {
+    "subject": "Atlas-7",
+    "subject_type": "Product",
+    "predicate": "is_a",
+    "object": "autonomous warehouse robot",
+    "object_type": "Product",
+    "evidence": "Atlas-7, an autonomous warehouse robot"
+  },
+  {
+    "subject": "Atlas-7",
+    "subject_type": "Product",
+    "predicate": "launched_in_year",
+    "object": "2019",
+    "object_type": "Date",
+    "evidence": "launched in 2019"
+  },
+  {
+    "subject": "Atlas-7",
+    "subject_type": "Product",
+    "predicate": "uses_software",
+    "object": "PathMind",
+    "object_type": "Product",
+    "evidence": "uses the company's proprietary navigation software, called PathMind"
+  },
+  {
+    "subject": "PathMind",
+    "subject_type": "Product",
+    "predicate": "developed_by",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "the company's proprietary navigation software, called PathMind"
+  },
+  {
+    "subject": "Atlas-7",
+    "subject_type": "Product",
+    "predicate": "manufactured_at",
+    "object": "Helix Robotics Corp. Monterrey assembly plant",
+    "object_type": "Facility",
+    "evidence": "manufactured at Helix's\nassembly plant in Monterrey, Mexico"
+  },
+  {
+    "subject": "Helix Robotics Corp. Monterrey assembly plant",
+    "subject_type": "Facility",
+    "predicate": "located_in",
+    "object": "Monterrey, Mexico",
+    "object_type": "Location",
+    "evidence": "assembly plant in Monterrey, Mexico"
+  },
+  {
+    "subject": "Atlas-7",
+    "subject_type": "Product",
+    "predicate": "max_load_capacity",
+    "object": "500 kilograms",
+    "object_type": "Quantity",
+    "evidence": "It can lift loads of up to 500 kilograms"
+  },
+  {
+    "subject": "Atlas-9",
+    "subject_type": "Product",
+    "predicate": "introduced_in_month_year",
+    "object": "March 2024",
+    "object_type": "Date",
+    "evidence": "In March 2024 the company introduced the Atlas-9"
+  },
+  {
+    "subject": "Atlas-9",
+    "subject_type": "Product",
+    "predicate": "successor_of",
+    "object": "Atlas-7",
+    "object_type": "Product",
+    "evidence": "which succeeds the Atlas-7"
+  },
+  {
+    "subject": "Atlas-9",
+    "subject_type": "Product",
+    "predicate": "includes_component",
+    "object": "robotic arm",
+    "object_type": "Product",
+    "evidence": "adds a robotic arm"
+  },
+  {
+    "subject": "robotic arm",
+    "subject_type": "Product",
+    "predicate": "developed_jointly_by",
+    "object": "Helix Robotics Corp.;Kessler Automation GmbH",
+    "object_type": "Organization+Organization",
+    "evidence": "robotic arm\ndeveloped jointly with Kessler Automation GmbH"
+  },
+  {
+    "subject": "Kessler Automation GmbH",
+    "subject_type": "Organization",
+    "predicate": "is_a",
+    "object": "industrial engineering firm",
+    "object_type": "Concept",
+    "evidence": "Kessler Automation GmbH, an industrial engineering firm"
+  },
+  {
+    "subject": "Kessler Automation GmbH",
+    "subject_type": "Organization",
+    "predicate": "headquartered_in",
+    "object": "Stuttgart, Germany",
+    "object_type": "Location",
+    "evidence": "headquartered in\nStuttgart, Germany"
+  },
+  {
+    "subject": "Atlas-9",
+    "subject_type": "Product",
+    "predicate": "runs_software",
+    "object": "PathMind",
+    "object_type": "Product",
+    "evidence": "The Atlas-9 also runs PathMind"
+  },
+  {
+    "subject": "Atlas-9",
+    "subject_type": "Product",
+    "predicate": "sold_primarily_to",
+    "object": "logistics customers",
+    "object_type": "Organization",
+    "evidence": "is sold primarily to logistics and e-commerce\ncustomers"
+  },
+  {
+    "subject": "Atlas-9",
+    "subject_type": "Product",
+    "predicate": "sold_primarily_to",
+    "object": "e-commerce customers",
+    "object_type": "Organization",
+    "evidence": "is sold primarily to logistics and e-commerce\ncustomers"
+  },
+  {
+    "subject": "FleetView",
+    "subject_type": "Product",
+    "predicate": "offered_by",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "Helix also offers FleetView"
+  },
+  {
+    "subject": "FleetView",
+    "subject_type": "Product",
+    "predicate": "is_a",
+    "object": "cloud dashboard",
+    "object_type": "Product",
+    "evidence": "FleetView, a cloud dashboard"
+  },
+  {
+    "subject": "FleetView",
+    "subject_type": "Product",
+    "predicate": "function",
+    "object": "monitor robots in real time",
+    "object_type": "Concept",
+    "evidence": "that lets customers monitor all of their robots in real time"
+  },
+  {
+    "subject": "FleetView",
+    "subject_type": "Product",
+    "predicate": "hosted_on",
+    "object": "Microsoft Azure",
+    "object_type": "Product",
+    "evidence": "FleetView is hosted on Microsoft Azure"
+  },
+  {
+    "subject": "Microsoft Azure",
+    "subject_type": "Product",
+    "predicate": "owned_by",
+    "object": "Microsoft",
+    "object_type": "Organization",
+    "evidence": "Microsoft Azure"
+  },
+  {
+    "subject": "Brightcart",
+    "subject_type": "Organization",
+    "predicate": "is_largest_customer_of",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "Helix's largest customer is Brightcart"
+  },
+  {
+    "subject": "Brightcart",
+    "subject_type": "Organization",
+    "predicate": "is_a",
+    "object": "online grocery retailer",
+    "object_type": "Concept",
+    "evidence": "Brightcart, an online grocery retailer"
+  },
+  {
+    "subject": "Brightcart",
+    "subject_type": "Organization",
+    "predicate": "based_in",
+    "object": "Chicago, Illinois",
+    "object_type": "Location",
+    "evidence": "based in Chicago, Illinois"
+  },
+  {
+    "subject": "Brightcart",
+    "subject_type": "Organization",
+    "predicate": "deployed_more_than",
+    "object": "1200 Atlas robots",
+    "object_type": "Quantity",
+    "evidence": "which has\ndeployed more than 1,200 Atlas robots"
+  },
+  {
+    "subject": "Brightcart",
+    "subject_type": "Organization",
+    "predicate": "operates_fulfilment_centres",
+    "object": "14",
+    "object_type": "Quantity",
+    "evidence": "across 14 fulfilment centres"
+  },
+  {
+    "subject": "Tom Lindqvist",
+    "subject_type": "Person",
+    "predicate": "is_role_at",
+    "object": "Chief Operating Officer;Brightcart",
+    "object_type": "Role+Organization",
+    "evidence": "Brightcart's Chief Operating Officer,\nTom Lindqvist"
+  },
+  {
+    "subject": "Tom Lindqvist",
+    "subject_type": "Person",
+    "predicate": "described_partnership_as",
+    "object": "\"the backbone of our same-day delivery service\"",
+    "object_type": "Quotation",
+    "evidence": "described the partnership as \"the backbone of our same-day delivery service.\""
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "has_distribution_agreement_with",
+    "object": "Sumida Trading",
+    "object_type": "Organization",
+    "evidence": "Helix signed a distribution agreement with Sumida Trading"
+  },
+  {
+    "subject": "distribution agreement between Helix Robotics Corp. and Sumida Trading",
+    "subject_type": "Event",
+    "predicate": "signed_in_year",
+    "object": "2023",
+    "object_type": "Date",
+    "evidence": "In 2023 Helix signed a distribution agreement"
+  },
+  {
+    "subject": "Sumida Trading",
+    "subject_type": "Organization",
+    "predicate": "is_a",
+    "object": "Japanese conglomerate",
+    "object_type": "Concept",
+    "evidence": "Sumida Trading, a Japanese conglomerate"
+  },
+  {
+    "subject": "Sumida Trading",
+    "subject_type": "Organization",
+    "predicate": "headquartered_in",
+    "object": "Osaka",
+    "object_type": "Location",
+    "evidence": "headquartered in Osaka"
+  },
+  {
+    "subject": "Sumida Trading",
+    "subject_type": "Organization",
+    "predicate": "has_exclusive_rights_to_sell_products_of",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "giving Sumida exclusive rights to sell Helix products"
+  },
+  {
+    "subject": "Sumida Trading",
+    "subject_type": "Organization",
+    "predicate": "exclusive_rights_region",
+    "object": "Japan",
+    "object_type": "Location",
+    "evidence": "exclusive rights to sell Helix products in Japan"
+  },
+  {
+    "subject": "Sumida Trading",
+    "subject_type": "Organization",
+    "predicate": "exclusive_rights_region",
+    "object": "South Korea",
+    "object_type": "Location",
+    "evidence": "exclusive rights to sell Helix products in ... South\nKorea"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "partners_with",
+    "object": "University of Texas at Austin",
+    "object_type": "Organization",
+    "evidence": "The company also partners with the University of Texas at Austin"
+  },
+  {
+    "subject": "University of Texas at Austin",
+    "subject_type": "Organization",
+    "predicate": "located_in",
+    "object": "Austin, Texas",
+    "object_type": "Location",
+    "evidence": "University of Texas at Austin"
+  },
+  {
+    "subject": "research programme into human-robot collaboration",
+    "subject_type": "Event",
+    "predicate": "led_by",
+    "object": "Elena Vasquez",
+    "object_type": "Person",
+    "evidence": "The programme is led by Professor Elena Vasquez"
+  },
+  {
+    "subject": "research programme into human-robot collaboration",
+    "subject_type": "Event",
+    "predicate": "focuses_on",
+    "object": "human-robot collaboration",
+    "object_type": "Concept",
+    "evidence": "research programme into\nhuman-robot collaboration"
+  },
+  {
+    "subject": "Elena Vasquez",
+    "subject_type": "Person",
+    "predicate": "was_colleague_of",
+    "object": "Maya Okafor",
+    "object_type": "Person",
+    "evidence": "a former colleague of\n\nDr. Okafor at Northwind Labs"
+  },
+  {
+    "subject": "Elena Vasquez",
+    "subject_type": "Person",
+    "predicate": "worked_at",
+    "object": "Northwind Labs",
+    "object_type": "Organization",
+    "evidence": "a former colleague of\n\nDr. Okafor at Northwind Labs"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "total_funding_raised",
+    "object": "$410 million",
+    "object_type": "Amount",
+    "evidence": "Helix has raised a total of $410 million"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "number_of_funding_rounds",
+    "object": "4",
+    "object_type": "Quantity",
+    "evidence": "across four funding rounds"
+  },
+  {
+    "subject": "Series C round of Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "closed_in_year",
+    "object": "2022",
+    "object_type": "Date",
+    "evidence": "Its Series C round, closed in 2022"
+  },
+  {
+    "subject": "Series C round of Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "led_by",
+    "object": "Granite Peak Ventures",
+    "object_type": "Organization",
+    "evidence": "was led by Granite Peak Ventures"
+  },
+  {
+    "subject": "Granite Peak Ventures",
+    "subject_type": "Organization",
+    "predicate": "is_a",
+    "object": "venture capital firm",
+    "object_type": "Concept",
+    "evidence": "Granite Peak\nVentures, a venture capital firm"
+  },
+  {
+    "subject": "Granite Peak Ventures",
+    "subject_type": "Organization",
+    "predicate": "based_in",
+    "object": "Menlo Park, California",
+    "object_type": "Location",
+    "evidence": "based in Menlo Park, California"
+  },
+  {
+    "subject": "Lucas Feld",
+    "subject_type": "Person",
+    "predicate": "is_partner_at",
+    "object": "Granite Peak Ventures",
+    "object_type": "Organization",
+    "evidence": "Granite Peak\npartner Lucas Feld"
+  },
+  {
+    "subject": "Lucas Feld",
+    "subject_type": "Person",
+    "predicate": "joined_board_of",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "joined Helix's board of directors"
+  },
+  {
+    "subject": "board seat for Lucas Feld at Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "as_part_of",
+    "object": "Series C round of Helix Robotics Corp.",
+    "object_type": "Event",
+    "evidence": "as part of that deal"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "received_seed_funding_from",
+    "object": "Northwind Ventures",
+    "object_type": "Organization",
+    "evidence": "Helix received seed funding from Northwind Labs' venture arm, Northwind Ventures"
+  },
+  {
+    "subject": "seed funding for Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "occurred_in_year",
+    "object": "2017",
+    "object_type": "Date",
+    "evidence": "Earlier, in 2017, Helix received seed funding"
+  },
+  {
+    "subject": "Northwind Ventures",
+    "subject_type": "Organization",
+    "predicate": "is_venture_arm_of",
+    "object": "Northwind Labs",
+    "object_type": "Organization",
+    "evidence": "Northwind Labs' venture arm, Northwind Ventures"
+  },
+  {
+    "subject": "Sumida Trading",
+    "subject_type": "Organization",
+    "predicate": "made_strategic_investment_in",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "Sumida Trading made a strategic investment in the company"
+  },
+  {
+    "subject": "strategic investment by Sumida Trading in Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "occurred_in_year",
+    "object": "2023",
+    "object_type": "Date",
+    "evidence": "in 2023, at the same time as the\ndistribution agreement"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "acquired",
+    "object": "Lumen Sensors",
+    "object_type": "Organization",
+    "evidence": "In September 2025 Helix acquired Lumen Sensors"
+  },
+  {
+    "subject": "acquisition of Lumen Sensors by Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "occurred_in_month_year",
+    "object": "September 2025",
+    "object_type": "Date",
+    "evidence": "In September 2025 Helix acquired Lumen Sensors"
+  },
+  {
+    "subject": "acquisition of Lumen Sensors by Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "purchase_price",
+    "object": "$85 million",
+    "object_type": "Amount",
+    "evidence": "for $85 million"
+  },
+  {
+    "subject": "Lumen Sensors",
+    "subject_type": "Organization",
+    "predicate": "is_a",
+    "object": "LiDAR manufacturer",
+    "object_type": "Concept",
+    "evidence": "Lumen Sensors, a LiDAR manufacturer"
+  },
+  {
+    "subject": "Lumen Sensors",
+    "subject_type": "Organization",
+    "predicate": "based_in",
+    "object": "Eindhoven, the Netherlands",
+    "object_type": "Location",
+    "evidence": "based in Eindhoven, the\nNetherlands"
+  },
+  {
+    "subject": "Lumen Sensors",
+    "subject_type": "Organization",
+    "predicate": "founded_by",
+    "object": "Arjen de Vries",
+    "object_type": "Person",
+    "evidence": "Lumen Sensors was founded by Arjen de Vries"
+  },
+  {
+    "subject": "Arjen de Vries",
+    "subject_type": "Person",
+    "predicate": "leads_division_at",
+    "object": "sensor division;Helix Robotics Corp.",
+    "object_type": "OrganizationDivision+Organization",
+    "evidence": "who now leads Helix's\nsensor division"
+  },
+  {
+    "subject": "Lumen Sensors",
+    "subject_type": "Organization",
+    "predicate": "supplied_product_to",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "Lumen's LiDAR units had already been supplied to Helix"
+  },
+  {
+    "subject": "Lumen Sensors LiDAR units",
+    "subject_type": "Product",
+    "predicate": "used_in",
+    "object": "Atlas-9",
+    "object_type": "Product",
+    "evidence": "for use in the Atlas-9"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "competes_with",
+    "object": "Ostrava Robotics",
+    "object_type": "Organization",
+    "evidence": "Helix competes with Ostrava Robotics"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "competes_with",
+    "object": "Brightline Machines",
+    "object_type": "Organization",
+    "evidence": "and with Brightline Machines"
+  },
+  {
+    "subject": "Ostrava Robotics",
+    "subject_type": "Organization",
+    "predicate": "is_a",
+    "object": "Czech company",
+    "object_type": "Concept",
+    "evidence": "Ostrava Robotics, a Czech company"
+  },
+  {
+    "subject": "Ostrava Robotics",
+    "subject_type": "Organization",
+    "predicate": "makes_product_line",
+    "object": "Kestrel line of warehouse robots",
+    "object_type": "Product",
+    "evidence": "that makes the Kestrel line of warehouse\nrobots"
+  },
+  {
+    "subject": "Brightline Machines",
+    "subject_type": "Organization",
+    "predicate": "is_subsidiary_of",
+    "object": "Orbital Dynamics",
+    "object_type": "Organization",
+    "evidence": "Brightline Machines, a subsidiary of Orbital Dynamics"
+  },
+  {
+    "subject": "Meridian Research",
+    "subject_type": "Organization",
+    "predicate": "ranks",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "Analysts at Meridian Research\nrank Helix second"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "ranked_position_in_market",
+    "object": "second",
+    "object_type": "Ordinal",
+    "evidence": "rank Helix second"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "market_scope",
+    "object": "North American warehouse robotics market",
+    "object_type": "Concept",
+    "evidence": "second in the North American warehouse robotics market"
+  },
+  {
+    "subject": "Ostrava Robotics",
+    "subject_type": "Organization",
+    "predicate": "ranked_ahead_of",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "behind Ostrava Robotics"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "reported_revenue_in_year",
+    "object": "$620 million;2025",
+    "object_type": "Amount+Date",
+    "evidence": "In 2025, Helix reported revenue of $620 million"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "employee_count_in_year",
+    "object": "2300;2025",
+    "object_type": "Quantity+Date",
+    "evidence": "and employed approximately 2,300 people"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "opened_facility",
+    "object": "Helix Robotics Corp. Pune assembly plant",
+    "object_type": "Facility",
+    "evidence": "The\ncompany opened a second assembly plant in Pune, India"
+  },
+  {
+    "subject": "Helix Robotics Corp. Pune assembly plant",
+    "subject_type": "Facility",
+    "predicate": "located_in",
+    "object": "Pune, India",
+    "object_type": "Location",
+    "evidence": "assembly plant in Pune, India"
+  },
+  {
+    "subject": "Helix Robotics Corp. Pune assembly plant",
+    "subject_type": "Facility",
+    "predicate": "began_production_in_month_year",
+    "object": "November 2025",
+    "object_type": "Date",
+    "evidence": "which began producing Atlas-9 units in\nNovember 2025"
+  },
+  {
+    "subject": "Helix Robotics Corp. Pune assembly plant",
+    "subject_type": "Facility",
+    "predicate": "produces",
+    "object": "Atlas-9",
+    "object_type": "Product",
+    "evidence": "began producing Atlas-9 units"
+  },
+  {
+    "subject": "Maya Okafor",
+    "subject_type": "Person",
+    "predicate": "received_award",
+    "object": "Robotics Executive of the Year",
+    "object_type": "Award",
+    "evidence": "Dr. Okafor was named Robotics Executive of the Year"
+  },
+  {
+    "subject": "Robotics Executive of the Year",
+    "subject_type": "Award",
+    "predicate": "awarded_by",
+    "object": "International Federation of Automation",
+    "object_type": "Organization",
+    "evidence": "by the International Federation\nof Automation"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "plans_to_list_shares_on",
+    "object": "Nasdaq",
+    "object_type": "Organization",
+    "evidence": "plans to list its shares on the Nasdaq stock exchange"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "planned_listing_year",
+    "object": "2026",
+    "object_type": "Date",
+    "evidence": "in\n2026"
+  },
+  {
+    "subject": "Kessler Automation GmbH",
+    "subject_type": "Organization",
+    "predicate": "organization_type",
+    "object": "industrial engineering firm",
+    "object_type": "Concept",
+    "evidence": "Kessler Automation GmbH, an industrial engineering firm headquartered in Stuttgart, Germany."
+  },
+  {
+    "subject": "Atlas-9",
+    "subject_type": "Product",
+    "predicate": "robotic_arm_developed_jointly_with",
+    "object": "Kessler Automation GmbH",
+    "object_type": "Organization",
+    "evidence": "adds a robotic arm developed jointly with Kessler Automation GmbH"
+  },
+  {
+    "subject": "Brightcart",
+    "subject_type": "Organization",
+    "predicate": "has_chief_operating_officer",
+    "object": "Tom Lindqvist",
+    "object_type": "Person",
+    "evidence": "Brightcart's Chief Operating Officer, Tom Lindqvist"
+  },
+  {
+    "subject": "Chief Operating Officer",
+    "subject_type": "Role",
+    "predicate": "role_at_company",
+    "object": "Brightcart",
+    "object_type": "Organization",
+    "evidence": "Brightcart's Chief Operating Officer, Tom Lindqvist"
+  },
+  {
+    "subject": "Brightcart",
+    "subject_type": "Organization",
+    "predicate": "largest_customer_of",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "Helix's largest customer is Brightcart, an online grocery retailer based in Chicago, Illinois"
+  },
+  {
+    "subject": "Helix Robotics Corp.",
+    "subject_type": "Organization",
+    "predicate": "signed_distribution_agreement_with",
+    "object": "Sumida Trading",
+    "object_type": "Organization",
+    "evidence": "In 2023 Helix signed a distribution agreement with Sumida Trading"
+  },
+  {
+    "subject": "distribution agreement between Helix Robotics Corp. and Sumida Trading",
+    "subject_type": "Event",
+    "predicate": "occurred_in_year",
+    "object": "2023",
+    "object_type": "Date",
+    "evidence": "In 2023 Helix signed a distribution agreement with Sumida Trading"
+  },
+  {
+    "subject": "distribution agreement between Helix Robotics Corp. and Sumida Trading",
+    "subject_type": "Event",
+    "predicate": "involves_company",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "In 2023 Helix signed a distribution agreement with Sumida Trading"
+  },
+  {
+    "subject": "distribution agreement between Helix Robotics Corp. and Sumida Trading",
+    "subject_type": "Event",
+    "predicate": "involves_company",
+    "object": "Sumida Trading",
+    "object_type": "Organization",
+    "evidence": "In 2023 Helix signed a distribution agreement with Sumida Trading"
+  },
+  {
+    "subject": "distribution agreement between Helix Robotics Corp. and Sumida Trading",
+    "subject_type": "Event",
+    "predicate": "grants_exclusive_rights_in",
+    "object": "Japan",
+    "object_type": "Location",
+    "evidence": "giving Sumida exclusive rights to sell Helix products in Japan and South Korea."
+  },
+  {
+    "subject": "distribution agreement between Helix Robotics Corp. and Sumida Trading",
+    "subject_type": "Event",
+    "predicate": "grants_exclusive_rights_in",
+    "object": "South Korea",
+    "object_type": "Location",
+    "evidence": "giving Sumida exclusive rights to sell Helix products in Japan and South Korea."
+  },
+  {
+    "subject": "Sumida Trading",
+    "subject_type": "Organization",
+    "predicate": "organization_type",
+    "object": "Japanese conglomerate",
+    "object_type": "Concept",
+    "evidence": "Sumida Trading, a Japanese conglomerate headquartered in Osaka"
+  },
+  {
+    "subject": "strategic investment by Sumida Trading in Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "involves_investor",
+    "object": "Sumida Trading",
+    "object_type": "Organization",
+    "evidence": "Sumida Trading made a strategic investment in the company in 2023"
+  },
+  {
+    "subject": "strategic investment by Sumida Trading in Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "involves_company",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "Sumida Trading made a strategic investment in the company in 2023"
+  },
+  {
+    "subject": "acquisition of Lumen Sensors by Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "acquisition_price",
+    "object": "$85 million",
+    "object_type": "Money",
+    "evidence": "for $85 million."
+  },
+  {
+    "subject": "acquisition of Lumen Sensors by Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "acquirer",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "In September 2025 Helix acquired Lumen Sensors"
+  },
+  {
+    "subject": "acquisition of Lumen Sensors by Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "acquiree",
+    "object": "Lumen Sensors",
+    "object_type": "Organization",
+    "evidence": "In September 2025 Helix acquired Lumen Sensors"
+  },
+  {
+    "subject": "Lumen Sensors",
+    "subject_type": "Organization",
+    "predicate": "organization_type",
+    "object": "LiDAR manufacturer",
+    "object_type": "Concept",
+    "evidence": "Lumen Sensors, a LiDAR manufacturer based in Eindhoven, the Netherlands"
+  },
+  {
+    "subject": "seed funding for Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "investee",
+    "object": "Helix Robotics Corp.",
+    "object_type": "Organization",
+    "evidence": "Helix received seed funding"
+  },
+  {
+    "subject": "seed funding for Helix Robotics Corp.",
+    "subject_type": "Event",
+    "predicate": "investor",
+    "object": "Northwind Ventures",
+    "object_type": "Organization",
+    "evidence": "seed funding from Northwind Labs' venture arm, Northwind Ventures."
+  },
+  {
+    "subject": "Northwind Ventures",
+    "subject_type": "Organization",
+    "predicate": "venture_arm_of",
+    "object": "Northwind Labs",
+    "object_type": "Organization",
+    "evidence": "Northwind Labs' venture arm, Northwind Ventures."
+  }
+]

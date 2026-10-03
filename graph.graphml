@@ -1,0 +1,875 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d2" for="edge" attr.name="evidence" attr.type="string" />
+  <key id="d1" for="edge" attr.name="predicate" attr.type="string" />
+  <key id="d0" for="node" attr.name="type" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="Helix Robotics Corp.">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="robotics company">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="Austin, Texas">
+      <data key="d0">Location</data>
+    </node>
+    <node id="2014">
+      <data key="d0">Date</data>
+    </node>
+    <node id="Maya Okafor">
+      <data key="d0">Person</data>
+    </node>
+    <node id="Daniel Reyes">
+      <data key="d0">Person</data>
+    </node>
+    <node id="Carnegie Mellon University">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="mechanical engineering">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="Chief Executive Officer">
+      <data key="d0">Role</data>
+    </node>
+    <node id="Chief Technology Officer;2021">
+      <data key="d0">Role+Date</data>
+    </node>
+    <node id="2021">
+      <data key="d0">Date</data>
+    </node>
+    <node id="Helix Robotics Corp. advisory board">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="research scientist">
+      <data key="d0">Role</data>
+    </node>
+    <node id="Northwind Labs">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="Boston">
+      <data key="d0">Location</data>
+    </node>
+    <node id="autonomous systems">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="PhD in robotics">
+      <data key="d0">Degree</data>
+    </node>
+    <node id="Lagos, Nigeria">
+      <data key="d0">Location</data>
+    </node>
+    <node id="Priya Natarajan">
+      <data key="d0">Person</data>
+    </node>
+    <node id="computer vision team">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="Orbital Dynamics">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="satellite imaging company">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="Denver, Colorado">
+      <data key="d0">Location</data>
+    </node>
+    <node id="Atlas-7">
+      <data key="d0">Product</data>
+    </node>
+    <node id="autonomous warehouse robot">
+      <data key="d0">Product</data>
+    </node>
+    <node id="2019">
+      <data key="d0">Date</data>
+    </node>
+    <node id="PathMind">
+      <data key="d0">Product</data>
+    </node>
+    <node id="Helix Robotics Corp. Monterrey assembly plant">
+      <data key="d0">Facility</data>
+    </node>
+    <node id="Monterrey, Mexico">
+      <data key="d0">Location</data>
+    </node>
+    <node id="500 kilograms">
+      <data key="d0">Quantity</data>
+    </node>
+    <node id="Atlas-9">
+      <data key="d0">Product</data>
+    </node>
+    <node id="March 2024">
+      <data key="d0">Date</data>
+    </node>
+    <node id="robotic arm">
+      <data key="d0">Product</data>
+    </node>
+    <node id="Helix Robotics Corp.;Kessler Automation GmbH">
+      <data key="d0">Organization+Organization</data>
+    </node>
+    <node id="Kessler Automation GmbH">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="industrial engineering firm">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="Stuttgart, Germany">
+      <data key="d0">Location</data>
+    </node>
+    <node id="logistics customers">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="e-commerce customers">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="FleetView">
+      <data key="d0">Product</data>
+    </node>
+    <node id="cloud dashboard">
+      <data key="d0">Product</data>
+    </node>
+    <node id="monitor robots in real time">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="Microsoft Azure">
+      <data key="d0">Product</data>
+    </node>
+    <node id="Microsoft">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="Brightcart">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="online grocery retailer">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="Chicago, Illinois">
+      <data key="d0">Location</data>
+    </node>
+    <node id="1200 Atlas robots">
+      <data key="d0">Quantity</data>
+    </node>
+    <node id="14">
+      <data key="d0">Quantity</data>
+    </node>
+    <node id="Tom Lindqvist">
+      <data key="d0">Person</data>
+    </node>
+    <node id="Chief Operating Officer;Brightcart">
+      <data key="d0">Role+Organization</data>
+    </node>
+    <node id="&quot;the backbone of our same-day delivery service&quot;">
+      <data key="d0">Quotation</data>
+    </node>
+    <node id="Sumida Trading">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="distribution agreement between Helix Robotics Corp. and Sumida Trading">
+      <data key="d0">Event</data>
+    </node>
+    <node id="2023">
+      <data key="d0">Date</data>
+    </node>
+    <node id="Japanese conglomerate">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="Osaka">
+      <data key="d0">Location</data>
+    </node>
+    <node id="Japan">
+      <data key="d0">Location</data>
+    </node>
+    <node id="South Korea">
+      <data key="d0">Location</data>
+    </node>
+    <node id="University of Texas at Austin">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="research programme into human-robot collaboration">
+      <data key="d0">Event</data>
+    </node>
+    <node id="Elena Vasquez">
+      <data key="d0">Person</data>
+    </node>
+    <node id="human-robot collaboration">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="$410 million">
+      <data key="d0">Amount</data>
+    </node>
+    <node id="4">
+      <data key="d0">Quantity</data>
+    </node>
+    <node id="Series C round of Helix Robotics Corp.">
+      <data key="d0">Event</data>
+    </node>
+    <node id="2022">
+      <data key="d0">Date</data>
+    </node>
+    <node id="Granite Peak Ventures">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="venture capital firm">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="Menlo Park, California">
+      <data key="d0">Location</data>
+    </node>
+    <node id="Lucas Feld">
+      <data key="d0">Person</data>
+    </node>
+    <node id="board seat for Lucas Feld at Helix Robotics Corp.">
+      <data key="d0">Event</data>
+    </node>
+    <node id="Northwind Ventures">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="seed funding for Helix Robotics Corp.">
+      <data key="d0">Event</data>
+    </node>
+    <node id="2017">
+      <data key="d0">Date</data>
+    </node>
+    <node id="strategic investment by Sumida Trading in Helix Robotics Corp.">
+      <data key="d0">Event</data>
+    </node>
+    <node id="Lumen Sensors">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="acquisition of Lumen Sensors by Helix Robotics Corp.">
+      <data key="d0">Event</data>
+    </node>
+    <node id="September 2025">
+      <data key="d0">Date</data>
+    </node>
+    <node id="$85 million">
+      <data key="d0">Money</data>
+    </node>
+    <node id="LiDAR manufacturer">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="Eindhoven, the Netherlands">
+      <data key="d0">Location</data>
+    </node>
+    <node id="Arjen de Vries">
+      <data key="d0">Person</data>
+    </node>
+    <node id="sensor division;Helix Robotics Corp.">
+      <data key="d0">OrganizationDivision+Organization</data>
+    </node>
+    <node id="Lumen Sensors LiDAR units">
+      <data key="d0">Product</data>
+    </node>
+    <node id="Ostrava Robotics">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="Brightline Machines">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="Czech company">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="Kestrel line of warehouse robots">
+      <data key="d0">Product</data>
+    </node>
+    <node id="Meridian Research">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="second">
+      <data key="d0">Ordinal</data>
+    </node>
+    <node id="North American warehouse robotics market">
+      <data key="d0">Concept</data>
+    </node>
+    <node id="$620 million;2025">
+      <data key="d0">Amount+Date</data>
+    </node>
+    <node id="2300;2025">
+      <data key="d0">Quantity+Date</data>
+    </node>
+    <node id="Helix Robotics Corp. Pune assembly plant">
+      <data key="d0">Facility</data>
+    </node>
+    <node id="Pune, India">
+      <data key="d0">Location</data>
+    </node>
+    <node id="November 2025">
+      <data key="d0">Date</data>
+    </node>
+    <node id="Robotics Executive of the Year">
+      <data key="d0">Award</data>
+    </node>
+    <node id="International Federation of Automation">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="Nasdaq">
+      <data key="d0">Organization</data>
+    </node>
+    <node id="2026">
+      <data key="d0">Date</data>
+    </node>
+    <node id="Chief Operating Officer">
+      <data key="d0">Role</data>
+    </node>
+    <edge source="Helix Robotics Corp." target="robotics company" id="is_a">
+      <data key="d1">is_a</data>
+      <data key="d2">Helix Robotics Corp. ("Helix") is a robotics company</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="Austin, Texas" id="headquartered_in">
+      <data key="d1">headquartered_in</data>
+      <data key="d2">headquartered in Austin, Texas</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="2014" id="founded_in_year">
+      <data key="d1">founded_in_year</data>
+      <data key="d2">It was founded in
+2014</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="Maya Okafor" id="founded_by">
+      <data key="d1">founded_by</data>
+      <data key="d2">founded in
+2014 by Dr. Maya Okafor</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="Daniel Reyes" id="founded_by">
+      <data key="d1">founded_by</data>
+      <data key="d2">founded in
+2014 by Dr. Maya Okafor and Daniel Reyes</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="Sumida Trading" id="has_distribution_agreement_with">
+      <data key="d1">has_distribution_agreement_with</data>
+      <data key="d2">Helix signed a distribution agreement with Sumida Trading</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="Sumida Trading" id="signed_distribution_agreement_with">
+      <data key="d1">signed_distribution_agreement_with</data>
+      <data key="d2">In 2023 Helix signed a distribution agreement with Sumida Trading</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="University of Texas at Austin" id="partners_with">
+      <data key="d1">partners_with</data>
+      <data key="d2">The company also partners with the University of Texas at Austin</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="$410 million" id="total_funding_raised">
+      <data key="d1">total_funding_raised</data>
+      <data key="d2">Helix has raised a total of $410 million</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="4" id="number_of_funding_rounds">
+      <data key="d1">number_of_funding_rounds</data>
+      <data key="d2">across four funding rounds</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="Northwind Ventures" id="received_seed_funding_from">
+      <data key="d1">received_seed_funding_from</data>
+      <data key="d2">Helix received seed funding from Northwind Labs' venture arm, Northwind Ventures</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="Lumen Sensors" id="acquired">
+      <data key="d1">acquired</data>
+      <data key="d2">In September 2025 Helix acquired Lumen Sensors</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="Ostrava Robotics" id="competes_with">
+      <data key="d1">competes_with</data>
+      <data key="d2">Helix competes with Ostrava Robotics</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="Brightline Machines" id="competes_with">
+      <data key="d1">competes_with</data>
+      <data key="d2">and with Brightline Machines</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="second" id="ranked_position_in_market">
+      <data key="d1">ranked_position_in_market</data>
+      <data key="d2">rank Helix second</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="North American warehouse robotics market" id="market_scope">
+      <data key="d1">market_scope</data>
+      <data key="d2">second in the North American warehouse robotics market</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="$620 million;2025" id="reported_revenue_in_year">
+      <data key="d1">reported_revenue_in_year</data>
+      <data key="d2">In 2025, Helix reported revenue of $620 million</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="2300;2025" id="employee_count_in_year">
+      <data key="d1">employee_count_in_year</data>
+      <data key="d2">and employed approximately 2,300 people</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="Helix Robotics Corp. Pune assembly plant" id="opened_facility">
+      <data key="d1">opened_facility</data>
+      <data key="d2">The
+company opened a second assembly plant in Pune, India</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="Nasdaq" id="plans_to_list_shares_on">
+      <data key="d1">plans_to_list_shares_on</data>
+      <data key="d2">plans to list its shares on the Nasdaq stock exchange</data>
+    </edge>
+    <edge source="Helix Robotics Corp." target="2026" id="planned_listing_year">
+      <data key="d1">planned_listing_year</data>
+      <data key="d2">in
+2026</data>
+    </edge>
+    <edge source="Maya Okafor" target="Carnegie Mellon University" id="met_while_studying_at">
+      <data key="d1">met_while_studying_at</data>
+      <data key="d2">who met while studying mechanical engineering at
+Carnegie Mellon University</data>
+    </edge>
+    <edge source="Maya Okafor" target="Carnegie Mellon University" id="degree_from">
+      <data key="d1">degree_from</data>
+      <data key="d2">PhD in robotics from Carnegie
+Mellon University</data>
+    </edge>
+    <edge source="Maya Okafor" target="mechanical engineering" id="studied_field">
+      <data key="d1">studied_field</data>
+      <data key="d2">studying mechanical engineering at
+Carnegie Mellon University</data>
+    </edge>
+    <edge source="Maya Okafor" target="Chief Executive Officer" id="serves_as">
+      <data key="d1">serves_as</data>
+      <data key="d2">Okafor serves as Chief Executive Officer</data>
+    </edge>
+    <edge source="Maya Okafor" target="research scientist" id="worked_as">
+      <data key="d1">worked_as</data>
+      <data key="d2">Before founding Helix, Dr. Okafor worked as a research scientist</data>
+    </edge>
+    <edge source="Maya Okafor" target="Northwind Labs" id="employed_by">
+      <data key="d1">employed_by</data>
+      <data key="d2">worked as a research scientist at Northwind Labs</data>
+    </edge>
+    <edge source="Maya Okafor" target="PhD in robotics" id="holds_degree">
+      <data key="d1">holds_degree</data>
+      <data key="d2">She holds a PhD in robotics</data>
+    </edge>
+    <edge source="Maya Okafor" target="Lagos, Nigeria" id="born_in">
+      <data key="d1">born_in</data>
+      <data key="d2">was born in Lagos, Nigeria</data>
+    </edge>
+    <edge source="Maya Okafor" target="Robotics Executive of the Year" id="received_award">
+      <data key="d1">received_award</data>
+      <data key="d2">Dr. Okafor was named Robotics Executive of the Year</data>
+    </edge>
+    <edge source="Daniel Reyes" target="Carnegie Mellon University" id="met_while_studying_at">
+      <data key="d1">met_while_studying_at</data>
+      <data key="d2">who met while studying mechanical engineering at
+Carnegie Mellon University</data>
+    </edge>
+    <edge source="Daniel Reyes" target="mechanical engineering" id="studied_field">
+      <data key="d1">studied_field</data>
+      <data key="d2">studying mechanical engineering at
+Carnegie Mellon University</data>
+    </edge>
+    <edge source="Daniel Reyes" target="Chief Technology Officer;2021" id="held_role_until_year">
+      <data key="d1">held_role_until_year</data>
+      <data key="d2">Reyes held the role of Chief
+Technology Officer until 2021</data>
+    </edge>
+    <edge source="Daniel Reyes" target="2021" id="stepped_down_in_year">
+      <data key="d1">stepped_down_in_year</data>
+      <data key="d2">until 2021, when he stepped down</data>
+    </edge>
+    <edge source="Daniel Reyes" target="Helix Robotics Corp. advisory board" id="chairs">
+      <data key="d1">chairs</data>
+      <data key="d2">to chair the company's advisory board</data>
+    </edge>
+    <edge source="Northwind Labs" target="Boston" id="located_in">
+      <data key="d1">located_in</data>
+      <data key="d2">Northwind Labs, a Boston-based
+research institute</data>
+    </edge>
+    <edge source="Northwind Labs" target="autonomous systems" id="specializes_in">
+      <data key="d1">specializes_in</data>
+      <data key="d2">research institute specializing in autonomous systems</data>
+    </edge>
+    <edge source="Priya Natarajan" target="Chief Technology Officer;2021" id="appointed_role_in_year">
+      <data key="d1">appointed_role_in_year</data>
+      <data key="d2">In 2021, Priya Natarajan was appointed Chief Technology Officer</data>
+    </edge>
+    <edge source="Priya Natarajan" target="Maya Okafor" id="reports_to">
+      <data key="d1">reports_to</data>
+      <data key="d2">Natarajan
+reports directly to the CEO</data>
+    </edge>
+    <edge source="Priya Natarajan" target="computer vision team" id="previously_led">
+      <data key="d1">previously_led</data>
+      <data key="d2">She previously led the computer
+vision team</data>
+    </edge>
+    <edge source="Priya Natarajan" target="Orbital Dynamics" id="employed_by">
+      <data key="d1">employed_by</data>
+      <data key="d2">computer
+vision team at Orbital Dynamics</data>
+    </edge>
+    <edge source="Orbital Dynamics" target="satellite imaging company" id="is_a">
+      <data key="d1">is_a</data>
+      <data key="d2">Orbital Dynamics, a satellite imaging company</data>
+    </edge>
+    <edge source="Orbital Dynamics" target="Denver, Colorado" id="located_in">
+      <data key="d1">located_in</data>
+      <data key="d2">satellite imaging company based in Denver, Colorado</data>
+    </edge>
+    <edge source="Atlas-7" target="Helix Robotics Corp." id="is_flagship_product_of">
+      <data key="d1">is_flagship_product_of</data>
+      <data key="d2">Helix's flagship product is the Atlas-7</data>
+    </edge>
+    <edge source="Atlas-7" target="autonomous warehouse robot" id="is_a">
+      <data key="d1">is_a</data>
+      <data key="d2">Atlas-7, an autonomous warehouse robot</data>
+    </edge>
+    <edge source="Atlas-7" target="2019" id="launched_in_year">
+      <data key="d1">launched_in_year</data>
+      <data key="d2">launched in 2019</data>
+    </edge>
+    <edge source="Atlas-7" target="PathMind" id="uses_software">
+      <data key="d1">uses_software</data>
+      <data key="d2">uses the company's proprietary navigation software, called PathMind</data>
+    </edge>
+    <edge source="Atlas-7" target="Helix Robotics Corp. Monterrey assembly plant" id="manufactured_at">
+      <data key="d1">manufactured_at</data>
+      <data key="d2">manufactured at Helix's
+assembly plant in Monterrey, Mexico</data>
+    </edge>
+    <edge source="Atlas-7" target="500 kilograms" id="max_load_capacity">
+      <data key="d1">max_load_capacity</data>
+      <data key="d2">It can lift loads of up to 500 kilograms</data>
+    </edge>
+    <edge source="PathMind" target="Helix Robotics Corp." id="developed_by">
+      <data key="d1">developed_by</data>
+      <data key="d2">the company's proprietary navigation software, called PathMind</data>
+    </edge>
+    <edge source="Helix Robotics Corp. Monterrey assembly plant" target="Monterrey, Mexico" id="located_in">
+      <data key="d1">located_in</data>
+      <data key="d2">assembly plant in Monterrey, Mexico</data>
+    </edge>
+    <edge source="Atlas-9" target="March 2024" id="introduced_in_month_year">
+      <data key="d1">introduced_in_month_year</data>
+      <data key="d2">In March 2024 the company introduced the Atlas-9</data>
+    </edge>
+    <edge source="Atlas-9" target="Atlas-7" id="successor_of">
+      <data key="d1">successor_of</data>
+      <data key="d2">which succeeds the Atlas-7</data>
+    </edge>
+    <edge source="Atlas-9" target="robotic arm" id="includes_component">
+      <data key="d1">includes_component</data>
+      <data key="d2">adds a robotic arm</data>
+    </edge>
+    <edge source="Atlas-9" target="PathMind" id="runs_software">
+      <data key="d1">runs_software</data>
+      <data key="d2">The Atlas-9 also runs PathMind</data>
+    </edge>
+    <edge source="Atlas-9" target="logistics customers" id="sold_primarily_to">
+      <data key="d1">sold_primarily_to</data>
+      <data key="d2">is sold primarily to logistics and e-commerce
+customers</data>
+    </edge>
+    <edge source="Atlas-9" target="e-commerce customers" id="sold_primarily_to">
+      <data key="d1">sold_primarily_to</data>
+      <data key="d2">is sold primarily to logistics and e-commerce
+customers</data>
+    </edge>
+    <edge source="Atlas-9" target="Kessler Automation GmbH" id="robotic_arm_developed_jointly_with">
+      <data key="d1">robotic_arm_developed_jointly_with</data>
+      <data key="d2">adds a robotic arm developed jointly with Kessler Automation GmbH</data>
+    </edge>
+    <edge source="robotic arm" target="Helix Robotics Corp.;Kessler Automation GmbH" id="developed_jointly_by">
+      <data key="d1">developed_jointly_by</data>
+      <data key="d2">robotic arm
+developed jointly with Kessler Automation GmbH</data>
+    </edge>
+    <edge source="Kessler Automation GmbH" target="industrial engineering firm" id="is_a">
+      <data key="d1">is_a</data>
+      <data key="d2">Kessler Automation GmbH, an industrial engineering firm</data>
+    </edge>
+    <edge source="Kessler Automation GmbH" target="industrial engineering firm" id="organization_type">
+      <data key="d1">organization_type</data>
+      <data key="d2">Kessler Automation GmbH, an industrial engineering firm headquartered in Stuttgart, Germany.</data>
+    </edge>
+    <edge source="Kessler Automation GmbH" target="Stuttgart, Germany" id="headquartered_in">
+      <data key="d1">headquartered_in</data>
+      <data key="d2">headquartered in
+Stuttgart, Germany</data>
+    </edge>
+    <edge source="FleetView" target="Helix Robotics Corp." id="offered_by">
+      <data key="d1">offered_by</data>
+      <data key="d2">Helix also offers FleetView</data>
+    </edge>
+    <edge source="FleetView" target="cloud dashboard" id="is_a">
+      <data key="d1">is_a</data>
+      <data key="d2">FleetView, a cloud dashboard</data>
+    </edge>
+    <edge source="FleetView" target="monitor robots in real time" id="function">
+      <data key="d1">function</data>
+      <data key="d2">that lets customers monitor all of their robots in real time</data>
+    </edge>
+    <edge source="FleetView" target="Microsoft Azure" id="hosted_on">
+      <data key="d1">hosted_on</data>
+      <data key="d2">FleetView is hosted on Microsoft Azure</data>
+    </edge>
+    <edge source="Microsoft Azure" target="Microsoft" id="owned_by">
+      <data key="d1">owned_by</data>
+      <data key="d2">Microsoft Azure</data>
+    </edge>
+    <edge source="Brightcart" target="Helix Robotics Corp." id="is_largest_customer_of">
+      <data key="d1">is_largest_customer_of</data>
+      <data key="d2">Helix's largest customer is Brightcart</data>
+    </edge>
+    <edge source="Brightcart" target="Helix Robotics Corp." id="largest_customer_of">
+      <data key="d1">largest_customer_of</data>
+      <data key="d2">Helix's largest customer is Brightcart, an online grocery retailer based in Chicago, Illinois</data>
+    </edge>
+    <edge source="Brightcart" target="online grocery retailer" id="is_a">
+      <data key="d1">is_a</data>
+      <data key="d2">Brightcart, an online grocery retailer</data>
+    </edge>
+    <edge source="Brightcart" target="Chicago, Illinois" id="based_in">
+      <data key="d1">based_in</data>
+      <data key="d2">based in Chicago, Illinois</data>
+    </edge>
+    <edge source="Brightcart" target="1200 Atlas robots" id="deployed_more_than">
+      <data key="d1">deployed_more_than</data>
+      <data key="d2">which has
+deployed more than 1,200 Atlas robots</data>
+    </edge>
+    <edge source="Brightcart" target="14" id="operates_fulfilment_centres">
+      <data key="d1">operates_fulfilment_centres</data>
+      <data key="d2">across 14 fulfilment centres</data>
+    </edge>
+    <edge source="Brightcart" target="Tom Lindqvist" id="has_chief_operating_officer">
+      <data key="d1">has_chief_operating_officer</data>
+      <data key="d2">Brightcart's Chief Operating Officer, Tom Lindqvist</data>
+    </edge>
+    <edge source="Tom Lindqvist" target="Chief Operating Officer;Brightcart" id="is_role_at">
+      <data key="d1">is_role_at</data>
+      <data key="d2">Brightcart's Chief Operating Officer,
+Tom Lindqvist</data>
+    </edge>
+    <edge source="Tom Lindqvist" target="&quot;the backbone of our same-day delivery service&quot;" id="described_partnership_as">
+      <data key="d1">described_partnership_as</data>
+      <data key="d2">described the partnership as "the backbone of our same-day delivery service."</data>
+    </edge>
+    <edge source="Sumida Trading" target="Japanese conglomerate" id="is_a">
+      <data key="d1">is_a</data>
+      <data key="d2">Sumida Trading, a Japanese conglomerate</data>
+    </edge>
+    <edge source="Sumida Trading" target="Japanese conglomerate" id="organization_type">
+      <data key="d1">organization_type</data>
+      <data key="d2">Sumida Trading, a Japanese conglomerate headquartered in Osaka</data>
+    </edge>
+    <edge source="Sumida Trading" target="Osaka" id="headquartered_in">
+      <data key="d1">headquartered_in</data>
+      <data key="d2">headquartered in Osaka</data>
+    </edge>
+    <edge source="Sumida Trading" target="Helix Robotics Corp." id="has_exclusive_rights_to_sell_products_of">
+      <data key="d1">has_exclusive_rights_to_sell_products_of</data>
+      <data key="d2">giving Sumida exclusive rights to sell Helix products</data>
+    </edge>
+    <edge source="Sumida Trading" target="Helix Robotics Corp." id="made_strategic_investment_in">
+      <data key="d1">made_strategic_investment_in</data>
+      <data key="d2">Sumida Trading made a strategic investment in the company</data>
+    </edge>
+    <edge source="Sumida Trading" target="Japan" id="exclusive_rights_region">
+      <data key="d1">exclusive_rights_region</data>
+      <data key="d2">exclusive rights to sell Helix products in Japan</data>
+    </edge>
+    <edge source="Sumida Trading" target="South Korea" id="exclusive_rights_region">
+      <data key="d1">exclusive_rights_region</data>
+      <data key="d2">exclusive rights to sell Helix products in ... South
+Korea</data>
+    </edge>
+    <edge source="distribution agreement between Helix Robotics Corp. and Sumida Trading" target="2023" id="signed_in_year">
+      <data key="d1">signed_in_year</data>
+      <data key="d2">In 2023 Helix signed a distribution agreement</data>
+    </edge>
+    <edge source="distribution agreement between Helix Robotics Corp. and Sumida Trading" target="2023" id="occurred_in_year">
+      <data key="d1">occurred_in_year</data>
+      <data key="d2">In 2023 Helix signed a distribution agreement with Sumida Trading</data>
+    </edge>
+    <edge source="distribution agreement between Helix Robotics Corp. and Sumida Trading" target="Helix Robotics Corp." id="involves_company">
+      <data key="d1">involves_company</data>
+      <data key="d2">In 2023 Helix signed a distribution agreement with Sumida Trading</data>
+    </edge>
+    <edge source="distribution agreement between Helix Robotics Corp. and Sumida Trading" target="Sumida Trading" id="involves_company">
+      <data key="d1">involves_company</data>
+      <data key="d2">In 2023 Helix signed a distribution agreement with Sumida Trading</data>
+    </edge>
+    <edge source="distribution agreement between Helix Robotics Corp. and Sumida Trading" target="Japan" id="grants_exclusive_rights_in">
+      <data key="d1">grants_exclusive_rights_in</data>
+      <data key="d2">giving Sumida exclusive rights to sell Helix products in Japan and South Korea.</data>
+    </edge>
+    <edge source="distribution agreement between Helix Robotics Corp. and Sumida Trading" target="South Korea" id="grants_exclusive_rights_in">
+      <data key="d1">grants_exclusive_rights_in</data>
+      <data key="d2">giving Sumida exclusive rights to sell Helix products in Japan and South Korea.</data>
+    </edge>
+    <edge source="University of Texas at Austin" target="Austin, Texas" id="located_in">
+      <data key="d1">located_in</data>
+      <data key="d2">University of Texas at Austin</data>
+    </edge>
+    <edge source="research programme into human-robot collaboration" target="Elena Vasquez" id="led_by">
+      <data key="d1">led_by</data>
+      <data key="d2">The programme is led by Professor Elena Vasquez</data>
+    </edge>
+    <edge source="research programme into human-robot collaboration" target="human-robot collaboration" id="focuses_on">
+      <data key="d1">focuses_on</data>
+      <data key="d2">research programme into
+human-robot collaboration</data>
+    </edge>
+    <edge source="Elena Vasquez" target="Maya Okafor" id="was_colleague_of">
+      <data key="d1">was_colleague_of</data>
+      <data key="d2">a former colleague of
+
+Dr. Okafor at Northwind Labs</data>
+    </edge>
+    <edge source="Elena Vasquez" target="Northwind Labs" id="worked_at">
+      <data key="d1">worked_at</data>
+      <data key="d2">a former colleague of
+
+Dr. Okafor at Northwind Labs</data>
+    </edge>
+    <edge source="Series C round of Helix Robotics Corp." target="2022" id="closed_in_year">
+      <data key="d1">closed_in_year</data>
+      <data key="d2">Its Series C round, closed in 2022</data>
+    </edge>
+    <edge source="Series C round of Helix Robotics Corp." target="Granite Peak Ventures" id="led_by">
+      <data key="d1">led_by</data>
+      <data key="d2">was led by Granite Peak Ventures</data>
+    </edge>
+    <edge source="Granite Peak Ventures" target="venture capital firm" id="is_a">
+      <data key="d1">is_a</data>
+      <data key="d2">Granite Peak
+Ventures, a venture capital firm</data>
+    </edge>
+    <edge source="Granite Peak Ventures" target="Menlo Park, California" id="based_in">
+      <data key="d1">based_in</data>
+      <data key="d2">based in Menlo Park, California</data>
+    </edge>
+    <edge source="Lucas Feld" target="Granite Peak Ventures" id="is_partner_at">
+      <data key="d1">is_partner_at</data>
+      <data key="d2">Granite Peak
+partner Lucas Feld</data>
+    </edge>
+    <edge source="Lucas Feld" target="Helix Robotics Corp." id="joined_board_of">
+      <data key="d1">joined_board_of</data>
+      <data key="d2">joined Helix's board of directors</data>
+    </edge>
+    <edge source="board seat for Lucas Feld at Helix Robotics Corp." target="Series C round of Helix Robotics Corp." id="as_part_of">
+      <data key="d1">as_part_of</data>
+      <data key="d2">as part of that deal</data>
+    </edge>
+    <edge source="Northwind Ventures" target="Northwind Labs" id="is_venture_arm_of">
+      <data key="d1">is_venture_arm_of</data>
+      <data key="d2">Northwind Labs' venture arm, Northwind Ventures</data>
+    </edge>
+    <edge source="Northwind Ventures" target="Northwind Labs" id="venture_arm_of">
+      <data key="d1">venture_arm_of</data>
+      <data key="d2">Northwind Labs' venture arm, Northwind Ventures.</data>
+    </edge>
+    <edge source="seed funding for Helix Robotics Corp." target="2017" id="occurred_in_year">
+      <data key="d1">occurred_in_year</data>
+      <data key="d2">Earlier, in 2017, Helix received seed funding</data>
+    </edge>
+    <edge source="seed funding for Helix Robotics Corp." target="Helix Robotics Corp." id="investee">
+      <data key="d1">investee</data>
+      <data key="d2">Helix received seed funding</data>
+    </edge>
+    <edge source="seed funding for Helix Robotics Corp." target="Northwind Ventures" id="investor">
+      <data key="d1">investor</data>
+      <data key="d2">seed funding from Northwind Labs' venture arm, Northwind Ventures.</data>
+    </edge>
+    <edge source="strategic investment by Sumida Trading in Helix Robotics Corp." target="2023" id="occurred_in_year">
+      <data key="d1">occurred_in_year</data>
+      <data key="d2">in 2023, at the same time as the
+distribution agreement</data>
+    </edge>
+    <edge source="strategic investment by Sumida Trading in Helix Robotics Corp." target="Sumida Trading" id="involves_investor">
+      <data key="d1">involves_investor</data>
+      <data key="d2">Sumida Trading made a strategic investment in the company in 2023</data>
+    </edge>
+    <edge source="strategic investment by Sumida Trading in Helix Robotics Corp." target="Helix Robotics Corp." id="involves_company">
+      <data key="d1">involves_company</data>
+      <data key="d2">Sumida Trading made a strategic investment in the company in 2023</data>
+    </edge>
+    <edge source="Lumen Sensors" target="LiDAR manufacturer" id="is_a">
+      <data key="d1">is_a</data>
+      <data key="d2">Lumen Sensors, a LiDAR manufacturer</data>
+    </edge>
+    <edge source="Lumen Sensors" target="LiDAR manufacturer" id="organization_type">
+      <data key="d1">organization_type</data>
+      <data key="d2">Lumen Sensors, a LiDAR manufacturer based in Eindhoven, the Netherlands</data>
+    </edge>
+    <edge source="Lumen Sensors" target="Eindhoven, the Netherlands" id="based_in">
+      <data key="d1">based_in</data>
+      <data key="d2">based in Eindhoven, the
+Netherlands</data>
+    </edge>
+    <edge source="Lumen Sensors" target="Arjen de Vries" id="founded_by">
+      <data key="d1">founded_by</data>
+      <data key="d2">Lumen Sensors was founded by Arjen de Vries</data>
+    </edge>
+    <edge source="Lumen Sensors" target="Helix Robotics Corp." id="supplied_product_to">
+      <data key="d1">supplied_product_to</data>
+      <data key="d2">Lumen's LiDAR units had already been supplied to Helix</data>
+    </edge>
+    <edge source="acquisition of Lumen Sensors by Helix Robotics Corp." target="September 2025" id="occurred_in_month_year">
+      <data key="d1">occurred_in_month_year</data>
+      <data key="d2">In September 2025 Helix acquired Lumen Sensors</data>
+    </edge>
+    <edge source="acquisition of Lumen Sensors by Helix Robotics Corp." target="$85 million" id="purchase_price">
+      <data key="d1">purchase_price</data>
+      <data key="d2">for $85 million</data>
+    </edge>
+    <edge source="acquisition of Lumen Sensors by Helix Robotics Corp." target="$85 million" id="acquisition_price">
+      <data key="d1">acquisition_price</data>
+      <data key="d2">for $85 million.</data>
+    </edge>
+    <edge source="acquisition of Lumen Sensors by Helix Robotics Corp." target="Helix Robotics Corp." id="acquirer">
+      <data key="d1">acquirer</data>
+      <data key="d2">In September 2025 Helix acquired Lumen Sensors</data>
+    </edge>
+    <edge source="acquisition of Lumen Sensors by Helix Robotics Corp." target="Lumen Sensors" id="acquiree">
+      <data key="d1">acquiree</data>
+      <data key="d2">In September 2025 Helix acquired Lumen Sensors</data>
+    </edge>
+    <edge source="Arjen de Vries" target="sensor division;Helix Robotics Corp." id="leads_division_at">
+      <data key="d1">leads_division_at</data>
+      <data key="d2">who now leads Helix's
+sensor division</data>
+    </edge>
+    <edge source="Lumen Sensors LiDAR units" target="Atlas-9" id="used_in">
+      <data key="d1">used_in</data>
+      <data key="d2">for use in the Atlas-9</data>
+    </edge>
+    <edge source="Ostrava Robotics" target="Czech company" id="is_a">
+      <data key="d1">is_a</data>
+      <data key="d2">Ostrava Robotics, a Czech company</data>
+    </edge>
+    <edge source="Ostrava Robotics" target="Kestrel line of warehouse robots" id="makes_product_line">
+      <data key="d1">makes_product_line</data>
+      <data key="d2">that makes the Kestrel line of warehouse
+robots</data>
+    </edge>
+    <edge source="Ostrava Robotics" target="Helix Robotics Corp." id="ranked_ahead_of">
+      <data key="d1">ranked_ahead_of</data>
+      <data key="d2">behind Ostrava Robotics</data>
+    </edge>
+    <edge source="Brightline Machines" target="Orbital Dynamics" id="is_subsidiary_of">
+      <data key="d1">is_subsidiary_of</data>
+      <data key="d2">Brightline Machines, a subsidiary of Orbital Dynamics</data>
+    </edge>
+    <edge source="Meridian Research" target="Helix Robotics Corp." id="ranks">
+      <data key="d1">ranks</data>
+      <data key="d2">Analysts at Meridian Research
+rank Helix second</data>
+    </edge>
+    <edge source="Helix Robotics Corp. Pune assembly plant" target="Pune, India" id="located_in">
+      <data key="d1">located_in</data>
+      <data key="d2">assembly plant in Pune, India</data>
+    </edge>
+    <edge source="Helix Robotics Corp. Pune assembly plant" target="November 2025" id="began_production_in_month_year">
+      <data key="d1">began_production_in_month_year</data>
+      <data key="d2">which began producing Atlas-9 units in
+November 2025</data>
+    </edge>
+    <edge source="Helix Robotics Corp. Pune assembly plant" target="Atlas-9" id="produces">
+      <data key="d1">produces</data>
+      <data key="d2">began producing Atlas-9 units</data>
+    </edge>
+    <edge source="Robotics Executive of the Year" target="International Federation of Automation" id="awarded_by">
+      <data key="d1">awarded_by</data>
+      <data key="d2">by the International Federation
+of Automation</data>
+    </edge>
+    <edge source="Chief Operating Officer" target="Brightcart" id="role_at_company">
+      <data key="d1">role_at_company</data>
+      <data key="d2">Brightcart's Chief Operating Officer, Tom Lindqvist</data>
+    </edge>
+  </graph>
+</graphml>

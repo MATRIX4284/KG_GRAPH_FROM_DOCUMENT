@@ -1,0 +1,243 @@
+[
+  {
+    "title": "Atlas Autonomous Warehouse Robots",
+    "summary": "This cluster describes the Atlas-7 and Atlas-9 autonomous warehouse robots produced by Helix Robotics Corp., including their capabilities, software, and manufacturing locations. It highlights Atlas-9 as the 2024 successor to the 2019 Atlas-7, featuring a jointly developed robotic arm with Kessler Automation GmbH, use of Lumen Sensors LiDAR, and production at plants in Monterrey, Mexico and Pune, India for logistics and e-commerce customers.",
+    "key_entities": [
+      "Atlas-9",
+      "Atlas-7",
+      "Helix Robotics Corp. Pune assembly plant",
+      "Kessler Automation GmbH",
+      "PathMind"
+    ],
+    "entities": [
+      "2019",
+      "500 kilograms",
+      "Atlas-7",
+      "Atlas-9",
+      "Helix Robotics Corp. Monterrey assembly plant",
+      "Helix Robotics Corp. Pune assembly plant",
+      "Helix Robotics Corp.;Kessler Automation GmbH",
+      "Kessler Automation GmbH",
+      "Lumen Sensors LiDAR units",
+      "March 2024",
+      "Monterrey, Mexico",
+      "November 2025",
+      "PathMind",
+      "Pune, India",
+      "Stuttgart, Germany",
+      "autonomous warehouse robot",
+      "e-commerce customers",
+      "industrial engineering firm",
+      "logistics customers",
+      "robotic arm"
+    ],
+    "num_facts": 21
+  },
+  {
+    "title": "Helix Robotics Corp. Market Position",
+    "summary": "This cluster describes Helix Robotics Corp., a robotics company headquartered in Austin, Texas and founded in 2014, operating in the North American warehouse robotics market. It details its funding history, revenue, employee count, partnership with the University of Texas at Austin, and its competitive standing\u2014ranked second behind Ostrava Robotics\u2014along with its plan to list shares on Nasdaq in 2026, as noted by Meridian Research.",
+    "key_entities": [
+      "Helix Robotics Corp.",
+      "Ostrava Robotics",
+      "University of Texas at Austin",
+      "Austin, Texas",
+      "$620 million;2025"
+    ],
+    "entities": [
+      "$410 million",
+      "$620 million;2025",
+      "2014",
+      "2026",
+      "2300;2025",
+      "4",
+      "Austin, Texas",
+      "Czech company",
+      "Helix Robotics Corp.",
+      "Kestrel line of warehouse robots",
+      "Meridian Research",
+      "Nasdaq",
+      "North American warehouse robotics market",
+      "Ostrava Robotics",
+      "University of Texas at Austin",
+      "robotics company",
+      "second"
+    ],
+    "num_facts": 18
+  },
+  {
+    "title": "Leadership at Helix Robotics Corp",
+    "summary": "This cluster describes the educational backgrounds, career paths, and leadership roles of key figures associated with Helix Robotics Corp, centering on Maya Okafor, Daniel Reyes, and Priya Natarajan. It highlights their mechanical engineering and robotics expertise from Carnegie Mellon University, executive transitions in the CTO role, advisory board leadership, and a major industry award recognizing Maya Okafor\u2019s achievements in robotics.",
+    "key_entities": [
+      "Maya Okafor",
+      "Daniel Reyes",
+      "Priya Natarajan",
+      "Robotics Executive of the Year",
+      "Carnegie Mellon University"
+    ],
+    "entities": [
+      "2021",
+      "Carnegie Mellon University",
+      "Chief Executive Officer",
+      "Chief Technology Officer;2021",
+      "Daniel Reyes",
+      "Helix Robotics Corp. advisory board",
+      "International Federation of Automation",
+      "Lagos, Nigeria",
+      "Maya Okafor",
+      "PhD in robotics",
+      "Priya Natarajan",
+      "Robotics Executive of the Year",
+      "computer vision team",
+      "mechanical engineering",
+      "research scientist"
+    ],
+    "num_facts": 17
+  },
+  {
+    "title": "Northwind Labs & Venture Activities",
+    "summary": "This cluster describes Northwind Labs, a Boston-based organization specializing in autonomous systems, and its associated research and venture activities. It highlights a human-robot collaboration research programme led by Elena Vasquez, who previously worked at Northwind Labs, and shows how Northwind Ventures, the lab\u2019s venture arm, invested seed funding in Helix Robotics Corp. in 2017.",
+    "key_entities": [
+      "Northwind Labs",
+      "Elena Vasquez",
+      "seed funding for Helix Robotics Corp.",
+      "Northwind Ventures",
+      "research programme into human-robot collaboration"
+    ],
+    "entities": [
+      "2017",
+      "Boston",
+      "Elena Vasquez",
+      "Northwind Labs",
+      "Northwind Ventures",
+      "autonomous systems",
+      "human-robot collaboration",
+      "research programme into human-robot collaboration",
+      "seed funding for Helix Robotics Corp."
+    ],
+    "num_facts": 9
+  },
+  {
+    "title": "Brightcart Online Grocery Operations",
+    "summary": "This cluster describes Brightcart, an online grocery retailer based in Chicago, Illinois. It highlights the scale of the company\u2019s operations, including more than 1,200 Atlas robots and 14 fulfillment centers, and identifies Tom Lindqvist as the Chief Operating Officer, who characterizes a key partnership as the backbone of Brightcart\u2019s same-day delivery service.",
+    "key_entities": [
+      "Brightcart",
+      "Tom Lindqvist",
+      "Chief Operating Officer;Brightcart",
+      "Chief Operating Officer",
+      "14"
+    ],
+    "entities": [
+      "\"the backbone of our same-day delivery service\"",
+      "1200 Atlas robots",
+      "14",
+      "Brightcart",
+      "Chicago, Illinois",
+      "Chief Operating Officer",
+      "Chief Operating Officer;Brightcart",
+      "Tom Lindqvist",
+      "online grocery retailer"
+    ],
+    "num_facts": 8
+  },
+  {
+    "title": "Sumida Trading\u2013Helix Robotics Partnership",
+    "summary": "This cluster describes Sumida Trading, a Japanese conglomerate headquartered in Osaka, which holds exclusive rights in Japan and South Korea. In 2023, Sumida Trading entered into a distribution agreement with Helix Robotics Corp. granting exclusive rights in those regions, and also made a strategic investment in Helix Robotics, highlighting a deep commercial and financial partnership.",
+    "key_entities": [
+      "Sumida Trading",
+      "distribution agreement between Helix Robotics Corp. and Sumida Trading",
+      "strategic investment by Sumida Trading in Helix Robotics Corp.",
+      "Japan",
+      "South Korea"
+    ],
+    "entities": [
+      "2023",
+      "Japan",
+      "Japanese conglomerate",
+      "Osaka",
+      "South Korea",
+      "Sumida Trading",
+      "distribution agreement between Helix Robotics Corp. and Sumida Trading",
+      "strategic investment by Sumida Trading in Helix Robotics Corp."
+    ],
+    "num_facts": 12
+  },
+  {
+    "title": "Lumen Sensors Acquisition by Helix Robotics",
+    "summary": "Lumen Sensors is a LiDAR manufacturer based in Eindhoven, the Netherlands, founded by Arjen de Vries. In September 2025, Helix Robotics Corp. acquired Lumen Sensors for $85 million, after which Arjen de Vries took a leadership role in Helix\u2019s sensor division.",
+    "key_entities": [
+      "Lumen Sensors",
+      "acquisition of Lumen Sensors by Helix Robotics Corp.",
+      "Arjen de Vries",
+      "Eindhoven, the Netherlands",
+      "September 2025"
+    ],
+    "entities": [
+      "$85 million",
+      "Arjen de Vries",
+      "Eindhoven, the Netherlands",
+      "LiDAR manufacturer",
+      "Lumen Sensors",
+      "September 2025",
+      "acquisition of Lumen Sensors by Helix Robotics Corp.",
+      "sensor division;Helix Robotics Corp."
+    ],
+    "num_facts": 9
+  },
+  {
+    "title": "Helix Robotics Series C Financing",
+    "summary": "This cluster describes the Series C funding round of Helix Robotics Corp. in 2022, led by Granite Peak Ventures, a venture capital firm based in Menlo Park, California. As part of this round, Granite Peak Ventures partner Lucas Feld obtained a board seat at Helix Robotics Corp., highlighting the strategic nature of the investment.",
+    "key_entities": [
+      "Granite Peak Ventures",
+      "Series C round of Helix Robotics Corp.",
+      "Lucas Feld",
+      "venture capital firm",
+      "Menlo Park, California"
+    ],
+    "entities": [
+      "2022",
+      "Granite Peak Ventures",
+      "Lucas Feld",
+      "Menlo Park, California",
+      "Series C round of Helix Robotics Corp.",
+      "board seat for Lucas Feld at Helix Robotics Corp.",
+      "venture capital firm"
+    ],
+    "num_facts": 6
+  },
+  {
+    "title": "FleetView Cloud Robotics Dashboard",
+    "summary": "This cluster describes FleetView, a cloud-based dashboard application designed to monitor robots in real time. It is hosted on Microsoft Azure, a cloud platform owned by Microsoft, indicating that FleetView relies on Azure\u2019s infrastructure for its operation and scalability.",
+    "key_entities": [
+      "FleetView",
+      "Microsoft Azure",
+      "monitor robots in real time",
+      "Microsoft",
+      "cloud dashboard"
+    ],
+    "entities": [
+      "FleetView",
+      "Microsoft",
+      "Microsoft Azure",
+      "cloud dashboard",
+      "monitor robots in real time"
+    ],
+    "num_facts": 4
+  },
+  {
+    "title": "Orbital Dynamics Company Overview",
+    "summary": "Orbital Dynamics is a satellite imaging company based in Denver, Colorado, specializing in space-based imaging services or technologies. It serves as the parent company of Brightline Machines, which operates as its subsidiary, indicating a corporate structure focused on satellite imaging and related machine or equipment solutions.",
+    "key_entities": [
+      "Orbital Dynamics",
+      "Brightline Machines",
+      "Denver, Colorado",
+      "satellite imaging company"
+    ],
+    "entities": [
+      "Brightline Machines",
+      "Denver, Colorado",
+      "Orbital Dynamics",
+      "satellite imaging company"
+    ],
+    "num_facts": 3
+  }
+]

@@ -1,0 +1,259 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 800px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#f28e2b", "id": "Helix Robotics Corp.", "label": "Helix Robotics Corp.", "shape": "dot", "size": 118, "title": "Helix Robotics Corp.\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#f28e2b", "id": "robotics company", "label": "robotics company", "shape": "dot", "size": 13, "title": "robotics company\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#f28e2b", "id": "Austin, Texas", "label": "Austin, Texas", "shape": "dot", "size": 16, "title": "Austin, Texas\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#f28e2b", "id": "2014", "label": "2014", "shape": "dot", "size": 13, "title": "2014\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#e15759", "id": "Maya Okafor", "label": "Maya Okafor", "shape": "dot", "size": 46, "title": "Maya Okafor\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "Daniel Reyes", "label": "Daniel Reyes", "shape": "dot", "size": 28, "title": "Daniel Reyes\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "Carnegie Mellon University", "label": "Carnegie Mellon University", "shape": "dot", "size": 19, "title": "Carnegie Mellon University\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "mechanical engineering", "label": "mechanical engineering", "shape": "dot", "size": 16, "title": "mechanical engineering\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "Chief Executive Officer", "label": "Chief Executive Officer", "shape": "dot", "size": 13, "title": "Chief Executive Officer\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "Chief Technology Officer;2021", "label": "Chief Technology Officer;2021", "shape": "dot", "size": 16, "title": "Chief Technology Officer;2021\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "2021", "label": "2021", "shape": "dot", "size": 13, "title": "2021\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "Helix Robotics Corp. advisory board", "label": "Helix Robotics Corp. advisory board", "shape": "dot", "size": 13, "title": "Helix Robotics Corp. advisory board\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "research scientist", "label": "research scientist", "shape": "dot", "size": 13, "title": "research scientist\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#76b7b2", "id": "Northwind Labs", "label": "Northwind Labs", "shape": "dot", "size": 28, "title": "Northwind Labs\nTopic: Northwind Labs \u0026 Venture Activities"}, {"color": "#76b7b2", "id": "Boston", "label": "Boston", "shape": "dot", "size": 13, "title": "Boston\nTopic: Northwind Labs \u0026 Venture Activities"}, {"color": "#76b7b2", "id": "autonomous systems", "label": "autonomous systems", "shape": "dot", "size": 13, "title": "autonomous systems\nTopic: Northwind Labs \u0026 Venture Activities"}, {"color": "#e15759", "id": "PhD in robotics", "label": "PhD in robotics", "shape": "dot", "size": 13, "title": "PhD in robotics\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "Lagos, Nigeria", "label": "Lagos, Nigeria", "shape": "dot", "size": 13, "title": "Lagos, Nigeria\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "Priya Natarajan", "label": "Priya Natarajan", "shape": "dot", "size": 22, "title": "Priya Natarajan\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "computer vision team", "label": "computer vision team", "shape": "dot", "size": 13, "title": "computer vision team\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#bab0ac", "id": "Orbital Dynamics", "label": "Orbital Dynamics", "shape": "dot", "size": 22, "title": "Orbital Dynamics\nTopic: Orbital Dynamics Company Overview"}, {"color": "#bab0ac", "id": "satellite imaging company", "label": "satellite imaging company", "shape": "dot", "size": 13, "title": "satellite imaging company\nTopic: Orbital Dynamics Company Overview"}, {"color": "#bab0ac", "id": "Denver, Colorado", "label": "Denver, Colorado", "shape": "dot", "size": 13, "title": "Denver, Colorado\nTopic: Orbital Dynamics Company Overview"}, {"color": "#4e79a7", "id": "Atlas-7", "label": "Atlas-7", "shape": "dot", "size": 31, "title": "Atlas-7\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "autonomous warehouse robot", "label": "autonomous warehouse robot", "shape": "dot", "size": 13, "title": "autonomous warehouse robot\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "2019", "label": "2019", "shape": "dot", "size": 13, "title": "2019\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "PathMind", "label": "PathMind", "shape": "dot", "size": 19, "title": "PathMind\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "Helix Robotics Corp. Monterrey assembly plant", "label": "Helix Robotics Corp. Monterrey assembly plant", "shape": "dot", "size": 16, "title": "Helix Robotics Corp. Monterrey assembly plant\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "Monterrey, Mexico", "label": "Monterrey, Mexico", "shape": "dot", "size": 13, "title": "Monterrey, Mexico\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "500 kilograms", "label": "500 kilograms", "shape": "dot", "size": 13, "title": "500 kilograms\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "Atlas-9", "label": "Atlas-9", "shape": "dot", "size": 37, "title": "Atlas-9\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "March 2024", "label": "March 2024", "shape": "dot", "size": 13, "title": "March 2024\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "robotic arm", "label": "robotic arm", "shape": "dot", "size": 16, "title": "robotic arm\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "Helix Robotics Corp.;Kessler Automation GmbH", "label": "Helix Robotics Corp.;Kessler Automation GmbH", "shape": "dot", "size": 13, "title": "Helix Robotics Corp.;Kessler Automation GmbH\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "Kessler Automation GmbH", "label": "Kessler Automation GmbH", "shape": "dot", "size": 22, "title": "Kessler Automation GmbH\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "industrial engineering firm", "label": "industrial engineering firm", "shape": "dot", "size": 16, "title": "industrial engineering firm\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "Stuttgart, Germany", "label": "Stuttgart, Germany", "shape": "dot", "size": 13, "title": "Stuttgart, Germany\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "logistics customers", "label": "logistics customers", "shape": "dot", "size": 13, "title": "logistics customers\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "e-commerce customers", "label": "e-commerce customers", "shape": "dot", "size": 13, "title": "e-commerce customers\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#9c755f", "id": "FleetView", "label": "FleetView", "shape": "dot", "size": 22, "title": "FleetView\nTopic: FleetView Cloud Robotics Dashboard"}, {"color": "#9c755f", "id": "cloud dashboard", "label": "cloud dashboard", "shape": "dot", "size": 13, "title": "cloud dashboard\nTopic: FleetView Cloud Robotics Dashboard"}, {"color": "#9c755f", "id": "monitor robots in real time", "label": "monitor robots in real time", "shape": "dot", "size": 13, "title": "monitor robots in real time\nTopic: FleetView Cloud Robotics Dashboard"}, {"color": "#9c755f", "id": "Microsoft Azure", "label": "Microsoft Azure", "shape": "dot", "size": 16, "title": "Microsoft Azure\nTopic: FleetView Cloud Robotics Dashboard"}, {"color": "#9c755f", "id": "Microsoft", "label": "Microsoft", "shape": "dot", "size": 13, "title": "Microsoft\nTopic: FleetView Cloud Robotics Dashboard"}, {"color": "#59a14f", "id": "Brightcart", "label": "Brightcart", "shape": "dot", "size": 34, "title": "Brightcart\nTopic: Brightcart Online Grocery Operations"}, {"color": "#59a14f", "id": "online grocery retailer", "label": "online grocery retailer", "shape": "dot", "size": 13, "title": "online grocery retailer\nTopic: Brightcart Online Grocery Operations"}, {"color": "#59a14f", "id": "Chicago, Illinois", "label": "Chicago, Illinois", "shape": "dot", "size": 13, "title": "Chicago, Illinois\nTopic: Brightcart Online Grocery Operations"}, {"color": "#59a14f", "id": "1200 Atlas robots", "label": "1200 Atlas robots", "shape": "dot", "size": 13, "title": "1200 Atlas robots\nTopic: Brightcart Online Grocery Operations"}, {"color": "#59a14f", "id": "14", "label": "14", "shape": "dot", "size": 13, "title": "14\nTopic: Brightcart Online Grocery Operations"}, {"color": "#59a14f", "id": "Tom Lindqvist", "label": "Tom Lindqvist", "shape": "dot", "size": 19, "title": "Tom Lindqvist\nTopic: Brightcart Online Grocery Operations"}, {"color": "#59a14f", "id": "Chief Operating Officer;Brightcart", "label": "Chief Operating Officer;Brightcart", "shape": "dot", "size": 13, "title": "Chief Operating Officer;Brightcart\nTopic: Brightcart Online Grocery Operations"}, {"color": "#59a14f", "id": "\"the backbone of our same-day delivery service\"", "label": "\"the backbone of our same-day delivery service\"", "shape": "dot", "size": 13, "title": "\"the backbone of our same-day delivery service\"\nTopic: Brightcart Online Grocery Operations"}, {"color": "#edc948", "id": "Sumida Trading", "label": "Sumida Trading", "shape": "dot", "size": 43, "title": "Sumida Trading\nTopic: Sumida Trading\u2013Helix Robotics Partnership"}, {"color": "#edc948", "id": "distribution agreement between Helix Robotics Corp. and Sumida Trading", "label": "distribution agreement between Helix Robotics Corp. and Sumida Trading", "shape": "dot", "size": 28, "title": "distribution agreement between Helix Robotics Corp. and Sumida Trading\nTopic: Sumida Trading\u2013Helix Robotics Partnership"}, {"color": "#edc948", "id": "2023", "label": "2023", "shape": "dot", "size": 19, "title": "2023\nTopic: Sumida Trading\u2013Helix Robotics Partnership"}, {"color": "#edc948", "id": "Japanese conglomerate", "label": "Japanese conglomerate", "shape": "dot", "size": 16, "title": "Japanese conglomerate\nTopic: Sumida Trading\u2013Helix Robotics Partnership"}, {"color": "#edc948", "id": "Osaka", "label": "Osaka", "shape": "dot", "size": 13, "title": "Osaka\nTopic: Sumida Trading\u2013Helix Robotics Partnership"}, {"color": "#edc948", "id": "Japan", "label": "Japan", "shape": "dot", "size": 16, "title": "Japan\nTopic: Sumida Trading\u2013Helix Robotics Partnership"}, {"color": "#edc948", "id": "South Korea", "label": "South Korea", "shape": "dot", "size": 16, "title": "South Korea\nTopic: Sumida Trading\u2013Helix Robotics Partnership"}, {"color": "#f28e2b", "id": "University of Texas at Austin", "label": "University of Texas at Austin", "shape": "dot", "size": 16, "title": "University of Texas at Austin\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#76b7b2", "id": "research programme into human-robot collaboration", "label": "research programme into human-robot collaboration", "shape": "dot", "size": 16, "title": "research programme into human-robot collaboration\nTopic: Northwind Labs \u0026 Venture Activities"}, {"color": "#76b7b2", "id": "Elena Vasquez", "label": "Elena Vasquez", "shape": "dot", "size": 19, "title": "Elena Vasquez\nTopic: Northwind Labs \u0026 Venture Activities"}, {"color": "#76b7b2", "id": "human-robot collaboration", "label": "human-robot collaboration", "shape": "dot", "size": 13, "title": "human-robot collaboration\nTopic: Northwind Labs \u0026 Venture Activities"}, {"color": "#f28e2b", "id": "$410 million", "label": "$410 million", "shape": "dot", "size": 13, "title": "$410 million\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#f28e2b", "id": "4", "label": "4", "shape": "dot", "size": 13, "title": "4\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#ff9da7", "id": "Series C round of Helix Robotics Corp.", "label": "Series C round of Helix Robotics Corp.", "shape": "dot", "size": 19, "title": "Series C round of Helix Robotics Corp.\nTopic: Helix Robotics Series C Financing"}, {"color": "#ff9da7", "id": "2022", "label": "2022", "shape": "dot", "size": 13, "title": "2022\nTopic: Helix Robotics Series C Financing"}, {"color": "#ff9da7", "id": "Granite Peak Ventures", "label": "Granite Peak Ventures", "shape": "dot", "size": 22, "title": "Granite Peak Ventures\nTopic: Helix Robotics Series C Financing"}, {"color": "#ff9da7", "id": "venture capital firm", "label": "venture capital firm", "shape": "dot", "size": 13, "title": "venture capital firm\nTopic: Helix Robotics Series C Financing"}, {"color": "#ff9da7", "id": "Menlo Park, California", "label": "Menlo Park, California", "shape": "dot", "size": 13, "title": "Menlo Park, California\nTopic: Helix Robotics Series C Financing"}, {"color": "#ff9da7", "id": "Lucas Feld", "label": "Lucas Feld", "shape": "dot", "size": 16, "title": "Lucas Feld\nTopic: Helix Robotics Series C Financing"}, {"color": "#ff9da7", "id": "board seat for Lucas Feld at Helix Robotics Corp.", "label": "board seat for Lucas Feld at Helix Robotics Corp.", "shape": "dot", "size": 13, "title": "board seat for Lucas Feld at Helix Robotics Corp.\nTopic: Helix Robotics Series C Financing"}, {"color": "#76b7b2", "id": "Northwind Ventures", "label": "Northwind Ventures", "shape": "dot", "size": 22, "title": "Northwind Ventures\nTopic: Northwind Labs \u0026 Venture Activities"}, {"color": "#76b7b2", "id": "seed funding for Helix Robotics Corp.", "label": "seed funding for Helix Robotics Corp.", "shape": "dot", "size": 19, "title": "seed funding for Helix Robotics Corp.\nTopic: Northwind Labs \u0026 Venture Activities"}, {"color": "#76b7b2", "id": "2017", "label": "2017", "shape": "dot", "size": 13, "title": "2017\nTopic: Northwind Labs \u0026 Venture Activities"}, {"color": "#edc948", "id": "strategic investment by Sumida Trading in Helix Robotics Corp.", "label": "strategic investment by Sumida Trading in Helix Robotics Corp.", "shape": "dot", "size": 19, "title": "strategic investment by Sumida Trading in Helix Robotics Corp.\nTopic: Sumida Trading\u2013Helix Robotics Partnership"}, {"color": "#b07aa1", "id": "Lumen Sensors", "label": "Lumen Sensors", "shape": "dot", "size": 31, "title": "Lumen Sensors\nTopic: Lumen Sensors Acquisition by Helix Robotics"}, {"color": "#b07aa1", "id": "acquisition of Lumen Sensors by Helix Robotics Corp.", "label": "acquisition of Lumen Sensors by Helix Robotics Corp.", "shape": "dot", "size": 25, "title": "acquisition of Lumen Sensors by Helix Robotics Corp.\nTopic: Lumen Sensors Acquisition by Helix Robotics"}, {"color": "#b07aa1", "id": "September 2025", "label": "September 2025", "shape": "dot", "size": 13, "title": "September 2025\nTopic: Lumen Sensors Acquisition by Helix Robotics"}, {"color": "#b07aa1", "id": "$85 million", "label": "$85 million", "shape": "dot", "size": 16, "title": "$85 million\nTopic: Lumen Sensors Acquisition by Helix Robotics"}, {"color": "#b07aa1", "id": "LiDAR manufacturer", "label": "LiDAR manufacturer", "shape": "dot", "size": 16, "title": "LiDAR manufacturer\nTopic: Lumen Sensors Acquisition by Helix Robotics"}, {"color": "#b07aa1", "id": "Eindhoven, the Netherlands", "label": "Eindhoven, the Netherlands", "shape": "dot", "size": 13, "title": "Eindhoven, the Netherlands\nTopic: Lumen Sensors Acquisition by Helix Robotics"}, {"color": "#b07aa1", "id": "Arjen de Vries", "label": "Arjen de Vries", "shape": "dot", "size": 16, "title": "Arjen de Vries\nTopic: Lumen Sensors Acquisition by Helix Robotics"}, {"color": "#b07aa1", "id": "sensor division;Helix Robotics Corp.", "label": "sensor division;Helix Robotics Corp.", "shape": "dot", "size": 13, "title": "sensor division;Helix Robotics Corp.\nTopic: Lumen Sensors Acquisition by Helix Robotics"}, {"color": "#4e79a7", "id": "Lumen Sensors LiDAR units", "label": "Lumen Sensors LiDAR units", "shape": "dot", "size": 13, "title": "Lumen Sensors LiDAR units\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#f28e2b", "id": "Ostrava Robotics", "label": "Ostrava Robotics", "shape": "dot", "size": 22, "title": "Ostrava Robotics\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#bab0ac", "id": "Brightline Machines", "label": "Brightline Machines", "shape": "dot", "size": 16, "title": "Brightline Machines\nTopic: Orbital Dynamics Company Overview"}, {"color": "#f28e2b", "id": "Czech company", "label": "Czech company", "shape": "dot", "size": 13, "title": "Czech company\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#f28e2b", "id": "Kestrel line of warehouse robots", "label": "Kestrel line of warehouse robots", "shape": "dot", "size": 13, "title": "Kestrel line of warehouse robots\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#f28e2b", "id": "Meridian Research", "label": "Meridian Research", "shape": "dot", "size": 13, "title": "Meridian Research\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#f28e2b", "id": "second", "label": "second", "shape": "dot", "size": 13, "title": "second\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#f28e2b", "id": "North American warehouse robotics market", "label": "North American warehouse robotics market", "shape": "dot", "size": 13, "title": "North American warehouse robotics market\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#f28e2b", "id": "$620 million;2025", "label": "$620 million;2025", "shape": "dot", "size": 13, "title": "$620 million;2025\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#f28e2b", "id": "2300;2025", "label": "2300;2025", "shape": "dot", "size": 13, "title": "2300;2025\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#4e79a7", "id": "Helix Robotics Corp. Pune assembly plant", "label": "Helix Robotics Corp. Pune assembly plant", "shape": "dot", "size": 22, "title": "Helix Robotics Corp. Pune assembly plant\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "Pune, India", "label": "Pune, India", "shape": "dot", "size": 13, "title": "Pune, India\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#4e79a7", "id": "November 2025", "label": "November 2025", "shape": "dot", "size": 13, "title": "November 2025\nTopic: Atlas Autonomous Warehouse Robots"}, {"color": "#e15759", "id": "Robotics Executive of the Year", "label": "Robotics Executive of the Year", "shape": "dot", "size": 16, "title": "Robotics Executive of the Year\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#e15759", "id": "International Federation of Automation", "label": "International Federation of Automation", "shape": "dot", "size": 13, "title": "International Federation of Automation\nTopic: Leadership at Helix Robotics Corp"}, {"color": "#f28e2b", "id": "Nasdaq", "label": "Nasdaq", "shape": "dot", "size": 13, "title": "Nasdaq\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#f28e2b", "id": "2026", "label": "2026", "shape": "dot", "size": 13, "title": "2026\nTopic: Helix Robotics Corp. Market Position"}, {"color": "#59a14f", "id": "Chief Operating Officer", "label": "Chief Operating Officer", "shape": "dot", "size": 13, "title": "Chief Operating Officer\nTopic: Brightcart Online Grocery Operations"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "Helix Robotics Corp.", "label": "is_a", "title": "Helix Robotics Corp. (\"Helix\") is a robotics company", "to": "robotics company"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "headquartered_in", "title": "headquartered in Austin, Texas", "to": "Austin, Texas"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "founded_in_year", "title": "It was founded in\n2014", "to": "2014"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "founded_by", "title": "founded in\n2014 by Dr. Maya Okafor", "to": "Maya Okafor"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "founded_by", "title": "founded in\n2014 by Dr. Maya Okafor and Daniel Reyes", "to": "Daniel Reyes"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "has_distribution_agreement_with", "title": "Helix signed a distribution agreement with Sumida Trading", "to": "Sumida Trading"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "signed_distribution_agreement_with", "title": "In 2023 Helix signed a distribution agreement with Sumida Trading", "to": "Sumida Trading"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "partners_with", "title": "The company also partners with the University of Texas at Austin", "to": "University of Texas at Austin"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "total_funding_raised", "title": "Helix has raised a total of $410 million", "to": "$410 million"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "number_of_funding_rounds", "title": "across four funding rounds", "to": "4"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "received_seed_funding_from", "title": "Helix received seed funding from Northwind Labs\u0027 venture arm, Northwind Ventures", "to": "Northwind Ventures"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "acquired", "title": "In September 2025 Helix acquired Lumen Sensors", "to": "Lumen Sensors"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "competes_with", "title": "Helix competes with Ostrava Robotics", "to": "Ostrava Robotics"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "competes_with", "title": "and with Brightline Machines", "to": "Brightline Machines"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "ranked_position_in_market", "title": "rank Helix second", "to": "second"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "market_scope", "title": "second in the North American warehouse robotics market", "to": "North American warehouse robotics market"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "reported_revenue_in_year", "title": "In 2025, Helix reported revenue of $620 million", "to": "$620 million;2025"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "employee_count_in_year", "title": "and employed approximately 2,300 people", "to": "2300;2025"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "opened_facility", "title": "The\ncompany opened a second assembly plant in Pune, India", "to": "Helix Robotics Corp. Pune assembly plant"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "plans_to_list_shares_on", "title": "plans to list its shares on the Nasdaq stock exchange", "to": "Nasdaq"}, {"arrows": "to", "from": "Helix Robotics Corp.", "label": "planned_listing_year", "title": "in\n2026", "to": "2026"}, {"arrows": "to", "from": "Maya Okafor", "label": "met_while_studying_at", "title": "who met while studying mechanical engineering at\nCarnegie Mellon University", "to": "Carnegie Mellon University"}, {"arrows": "to", "from": "Maya Okafor", "label": "degree_from", "title": "PhD in robotics from Carnegie\nMellon University", "to": "Carnegie Mellon University"}, {"arrows": "to", "from": "Maya Okafor", "label": "studied_field", "title": "studying mechanical engineering at\nCarnegie Mellon University", "to": "mechanical engineering"}, {"arrows": "to", "from": "Maya Okafor", "label": "serves_as", "title": "Okafor serves as Chief Executive Officer", "to": "Chief Executive Officer"}, {"arrows": "to", "from": "Maya Okafor", "label": "worked_as", "title": "Before founding Helix, Dr. Okafor worked as a research scientist", "to": "research scientist"}, {"arrows": "to", "from": "Maya Okafor", "label": "employed_by", "title": "worked as a research scientist at Northwind Labs", "to": "Northwind Labs"}, {"arrows": "to", "from": "Maya Okafor", "label": "holds_degree", "title": "She holds a PhD in robotics", "to": "PhD in robotics"}, {"arrows": "to", "from": "Maya Okafor", "label": "born_in", "title": "was born in Lagos, Nigeria", "to": "Lagos, Nigeria"}, {"arrows": "to", "from": "Maya Okafor", "label": "received_award", "title": "Dr. Okafor was named Robotics Executive of the Year", "to": "Robotics Executive of the Year"}, {"arrows": "to", "from": "Daniel Reyes", "label": "met_while_studying_at", "title": "who met while studying mechanical engineering at\nCarnegie Mellon University", "to": "Carnegie Mellon University"}, {"arrows": "to", "from": "Daniel Reyes", "label": "studied_field", "title": "studying mechanical engineering at\nCarnegie Mellon University", "to": "mechanical engineering"}, {"arrows": "to", "from": "Daniel Reyes", "label": "held_role_until_year", "title": "Reyes held the role of Chief\nTechnology Officer until 2021", "to": "Chief Technology Officer;2021"}, {"arrows": "to", "from": "Daniel Reyes", "label": "stepped_down_in_year", "title": "until 2021, when he stepped down", "to": "2021"}, {"arrows": "to", "from": "Daniel Reyes", "label": "chairs", "title": "to chair the company\u0027s advisory board", "to": "Helix Robotics Corp. advisory board"}, {"arrows": "to", "from": "Northwind Labs", "label": "located_in", "title": "Northwind Labs, a Boston-based\nresearch institute", "to": "Boston"}, {"arrows": "to", "from": "Northwind Labs", "label": "specializes_in", "title": "research institute specializing in autonomous systems", "to": "autonomous systems"}, {"arrows": "to", "from": "Priya Natarajan", "label": "appointed_role_in_year", "title": "In 2021, Priya Natarajan was appointed Chief Technology Officer", "to": "Chief Technology Officer;2021"}, {"arrows": "to", "from": "Priya Natarajan", "label": "reports_to", "title": "Natarajan\nreports directly to the CEO", "to": "Maya Okafor"}, {"arrows": "to", "from": "Priya Natarajan", "label": "previously_led", "title": "She previously led the computer\nvision team", "to": "computer vision team"}, {"arrows": "to", "from": "Priya Natarajan", "label": "employed_by", "title": "computer\nvision team at Orbital Dynamics", "to": "Orbital Dynamics"}, {"arrows": "to", "from": "Orbital Dynamics", "label": "is_a", "title": "Orbital Dynamics, a satellite imaging company", "to": "satellite imaging company"}, {"arrows": "to", "from": "Orbital Dynamics", "label": "located_in", "title": "satellite imaging company based in Denver, Colorado", "to": "Denver, Colorado"}, {"arrows": "to", "from": "Atlas-7", "label": "is_flagship_product_of", "title": "Helix\u0027s flagship product is the Atlas-7", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "Atlas-7", "label": "is_a", "title": "Atlas-7, an autonomous warehouse robot", "to": "autonomous warehouse robot"}, {"arrows": "to", "from": "Atlas-7", "label": "launched_in_year", "title": "launched in 2019", "to": "2019"}, {"arrows": "to", "from": "Atlas-7", "label": "uses_software", "title": "uses the company\u0027s proprietary navigation software, called PathMind", "to": "PathMind"}, {"arrows": "to", "from": "Atlas-7", "label": "manufactured_at", "title": "manufactured at Helix\u0027s\nassembly plant in Monterrey, Mexico", "to": "Helix Robotics Corp. Monterrey assembly plant"}, {"arrows": "to", "from": "Atlas-7", "label": "max_load_capacity", "title": "It can lift loads of up to 500 kilograms", "to": "500 kilograms"}, {"arrows": "to", "from": "PathMind", "label": "developed_by", "title": "the company\u0027s proprietary navigation software, called PathMind", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "Helix Robotics Corp. Monterrey assembly plant", "label": "located_in", "title": "assembly plant in Monterrey, Mexico", "to": "Monterrey, Mexico"}, {"arrows": "to", "from": "Atlas-9", "label": "introduced_in_month_year", "title": "In March 2024 the company introduced the Atlas-9", "to": "March 2024"}, {"arrows": "to", "from": "Atlas-9", "label": "successor_of", "title": "which succeeds the Atlas-7", "to": "Atlas-7"}, {"arrows": "to", "from": "Atlas-9", "label": "includes_component", "title": "adds a robotic arm", "to": "robotic arm"}, {"arrows": "to", "from": "Atlas-9", "label": "runs_software", "title": "The Atlas-9 also runs PathMind", "to": "PathMind"}, {"arrows": "to", "from": "Atlas-9", "label": "sold_primarily_to", "title": "is sold primarily to logistics and e-commerce\ncustomers", "to": "logistics customers"}, {"arrows": "to", "from": "Atlas-9", "label": "sold_primarily_to", "title": "is sold primarily to logistics and e-commerce\ncustomers", "to": "e-commerce customers"}, {"arrows": "to", "from": "Atlas-9", "label": "robotic_arm_developed_jointly_with", "title": "adds a robotic arm developed jointly with Kessler Automation GmbH", "to": "Kessler Automation GmbH"}, {"arrows": "to", "from": "robotic arm", "label": "developed_jointly_by", "title": "robotic arm\ndeveloped jointly with Kessler Automation GmbH", "to": "Helix Robotics Corp.;Kessler Automation GmbH"}, {"arrows": "to", "from": "Kessler Automation GmbH", "label": "is_a", "title": "Kessler Automation GmbH, an industrial engineering firm", "to": "industrial engineering firm"}, {"arrows": "to", "from": "Kessler Automation GmbH", "label": "organization_type", "title": "Kessler Automation GmbH, an industrial engineering firm headquartered in Stuttgart, Germany.", "to": "industrial engineering firm"}, {"arrows": "to", "from": "Kessler Automation GmbH", "label": "headquartered_in", "title": "headquartered in\nStuttgart, Germany", "to": "Stuttgart, Germany"}, {"arrows": "to", "from": "FleetView", "label": "offered_by", "title": "Helix also offers FleetView", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "FleetView", "label": "is_a", "title": "FleetView, a cloud dashboard", "to": "cloud dashboard"}, {"arrows": "to", "from": "FleetView", "label": "function", "title": "that lets customers monitor all of their robots in real time", "to": "monitor robots in real time"}, {"arrows": "to", "from": "FleetView", "label": "hosted_on", "title": "FleetView is hosted on Microsoft Azure", "to": "Microsoft Azure"}, {"arrows": "to", "from": "Microsoft Azure", "label": "owned_by", "title": "Microsoft Azure", "to": "Microsoft"}, {"arrows": "to", "from": "Brightcart", "label": "is_largest_customer_of", "title": "Helix\u0027s largest customer is Brightcart", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "Brightcart", "label": "largest_customer_of", "title": "Helix\u0027s largest customer is Brightcart, an online grocery retailer based in Chicago, Illinois", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "Brightcart", "label": "is_a", "title": "Brightcart, an online grocery retailer", "to": "online grocery retailer"}, {"arrows": "to", "from": "Brightcart", "label": "based_in", "title": "based in Chicago, Illinois", "to": "Chicago, Illinois"}, {"arrows": "to", "from": "Brightcart", "label": "deployed_more_than", "title": "which has\ndeployed more than 1,200 Atlas robots", "to": "1200 Atlas robots"}, {"arrows": "to", "from": "Brightcart", "label": "operates_fulfilment_centres", "title": "across 14 fulfilment centres", "to": "14"}, {"arrows": "to", "from": "Brightcart", "label": "has_chief_operating_officer", "title": "Brightcart\u0027s Chief Operating Officer, Tom Lindqvist", "to": "Tom Lindqvist"}, {"arrows": "to", "from": "Tom Lindqvist", "label": "is_role_at", "title": "Brightcart\u0027s Chief Operating Officer,\nTom Lindqvist", "to": "Chief Operating Officer;Brightcart"}, {"arrows": "to", "from": "Tom Lindqvist", "label": "described_partnership_as", "title": "described the partnership as \"the backbone of our same-day delivery service.\"", "to": "\"the backbone of our same-day delivery service\""}, {"arrows": "to", "from": "Sumida Trading", "label": "is_a", "title": "Sumida Trading, a Japanese conglomerate", "to": "Japanese conglomerate"}, {"arrows": "to", "from": "Sumida Trading", "label": "organization_type", "title": "Sumida Trading, a Japanese conglomerate headquartered in Osaka", "to": "Japanese conglomerate"}, {"arrows": "to", "from": "Sumida Trading", "label": "headquartered_in", "title": "headquartered in Osaka", "to": "Osaka"}, {"arrows": "to", "from": "Sumida Trading", "label": "has_exclusive_rights_to_sell_products_of", "title": "giving Sumida exclusive rights to sell Helix products", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "Sumida Trading", "label": "made_strategic_investment_in", "title": "Sumida Trading made a strategic investment in the company", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "Sumida Trading", "label": "exclusive_rights_region", "title": "exclusive rights to sell Helix products in Japan", "to": "Japan"}, {"arrows": "to", "from": "Sumida Trading", "label": "exclusive_rights_region", "title": "exclusive rights to sell Helix products in ... South\nKorea", "to": "South Korea"}, {"arrows": "to", "from": "distribution agreement between Helix Robotics Corp. and Sumida Trading", "label": "signed_in_year", "title": "In 2023 Helix signed a distribution agreement", "to": "2023"}, {"arrows": "to", "from": "distribution agreement between Helix Robotics Corp. and Sumida Trading", "label": "occurred_in_year", "title": "In 2023 Helix signed a distribution agreement with Sumida Trading", "to": "2023"}, {"arrows": "to", "from": "distribution agreement between Helix Robotics Corp. and Sumida Trading", "label": "involves_company", "title": "In 2023 Helix signed a distribution agreement with Sumida Trading", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "distribution agreement between Helix Robotics Corp. and Sumida Trading", "label": "involves_company", "title": "In 2023 Helix signed a distribution agreement with Sumida Trading", "to": "Sumida Trading"}, {"arrows": "to", "from": "distribution agreement between Helix Robotics Corp. and Sumida Trading", "label": "grants_exclusive_rights_in", "title": "giving Sumida exclusive rights to sell Helix products in Japan and South Korea.", "to": "Japan"}, {"arrows": "to", "from": "distribution agreement between Helix Robotics Corp. and Sumida Trading", "label": "grants_exclusive_rights_in", "title": "giving Sumida exclusive rights to sell Helix products in Japan and South Korea.", "to": "South Korea"}, {"arrows": "to", "from": "University of Texas at Austin", "label": "located_in", "title": "University of Texas at Austin", "to": "Austin, Texas"}, {"arrows": "to", "from": "research programme into human-robot collaboration", "label": "led_by", "title": "The programme is led by Professor Elena Vasquez", "to": "Elena Vasquez"}, {"arrows": "to", "from": "research programme into human-robot collaboration", "label": "focuses_on", "title": "research programme into\nhuman-robot collaboration", "to": "human-robot collaboration"}, {"arrows": "to", "from": "Elena Vasquez", "label": "was_colleague_of", "title": "a former colleague of\n\nDr. Okafor at Northwind Labs", "to": "Maya Okafor"}, {"arrows": "to", "from": "Elena Vasquez", "label": "worked_at", "title": "a former colleague of\n\nDr. Okafor at Northwind Labs", "to": "Northwind Labs"}, {"arrows": "to", "from": "Series C round of Helix Robotics Corp.", "label": "closed_in_year", "title": "Its Series C round, closed in 2022", "to": "2022"}, {"arrows": "to", "from": "Series C round of Helix Robotics Corp.", "label": "led_by", "title": "was led by Granite Peak Ventures", "to": "Granite Peak Ventures"}, {"arrows": "to", "from": "Granite Peak Ventures", "label": "is_a", "title": "Granite Peak\nVentures, a venture capital firm", "to": "venture capital firm"}, {"arrows": "to", "from": "Granite Peak Ventures", "label": "based_in", "title": "based in Menlo Park, California", "to": "Menlo Park, California"}, {"arrows": "to", "from": "Lucas Feld", "label": "is_partner_at", "title": "Granite Peak\npartner Lucas Feld", "to": "Granite Peak Ventures"}, {"arrows": "to", "from": "Lucas Feld", "label": "joined_board_of", "title": "joined Helix\u0027s board of directors", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "board seat for Lucas Feld at Helix Robotics Corp.", "label": "as_part_of", "title": "as part of that deal", "to": "Series C round of Helix Robotics Corp."}, {"arrows": "to", "from": "Northwind Ventures", "label": "is_venture_arm_of", "title": "Northwind Labs\u0027 venture arm, Northwind Ventures", "to": "Northwind Labs"}, {"arrows": "to", "from": "Northwind Ventures", "label": "venture_arm_of", "title": "Northwind Labs\u0027 venture arm, Northwind Ventures.", "to": "Northwind Labs"}, {"arrows": "to", "from": "seed funding for Helix Robotics Corp.", "label": "occurred_in_year", "title": "Earlier, in 2017, Helix received seed funding", "to": "2017"}, {"arrows": "to", "from": "seed funding for Helix Robotics Corp.", "label": "investee", "title": "Helix received seed funding", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "seed funding for Helix Robotics Corp.", "label": "investor", "title": "seed funding from Northwind Labs\u0027 venture arm, Northwind Ventures.", "to": "Northwind Ventures"}, {"arrows": "to", "from": "strategic investment by Sumida Trading in Helix Robotics Corp.", "label": "occurred_in_year", "title": "in 2023, at the same time as the\ndistribution agreement", "to": "2023"}, {"arrows": "to", "from": "strategic investment by Sumida Trading in Helix Robotics Corp.", "label": "involves_investor", "title": "Sumida Trading made a strategic investment in the company in 2023", "to": "Sumida Trading"}, {"arrows": "to", "from": "strategic investment by Sumida Trading in Helix Robotics Corp.", "label": "involves_company", "title": "Sumida Trading made a strategic investment in the company in 2023", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "Lumen Sensors", "label": "is_a", "title": "Lumen Sensors, a LiDAR manufacturer", "to": "LiDAR manufacturer"}, {"arrows": "to", "from": "Lumen Sensors", "label": "organization_type", "title": "Lumen Sensors, a LiDAR manufacturer based in Eindhoven, the Netherlands", "to": "LiDAR manufacturer"}, {"arrows": "to", "from": "Lumen Sensors", "label": "based_in", "title": "based in Eindhoven, the\nNetherlands", "to": "Eindhoven, the Netherlands"}, {"arrows": "to", "from": "Lumen Sensors", "label": "founded_by", "title": "Lumen Sensors was founded by Arjen de Vries", "to": "Arjen de Vries"}, {"arrows": "to", "from": "Lumen Sensors", "label": "supplied_product_to", "title": "Lumen\u0027s LiDAR units had already been supplied to Helix", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "acquisition of Lumen Sensors by Helix Robotics Corp.", "label": "occurred_in_month_year", "title": "In September 2025 Helix acquired Lumen Sensors", "to": "September 2025"}, {"arrows": "to", "from": "acquisition of Lumen Sensors by Helix Robotics Corp.", "label": "purchase_price", "title": "for $85 million", "to": "$85 million"}, {"arrows": "to", "from": "acquisition of Lumen Sensors by Helix Robotics Corp.", "label": "acquisition_price", "title": "for $85 million.", "to": "$85 million"}, {"arrows": "to", "from": "acquisition of Lumen Sensors by Helix Robotics Corp.", "label": "acquirer", "title": "In September 2025 Helix acquired Lumen Sensors", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "acquisition of Lumen Sensors by Helix Robotics Corp.", "label": "acquiree", "title": "In September 2025 Helix acquired Lumen Sensors", "to": "Lumen Sensors"}, {"arrows": "to", "from": "Arjen de Vries", "label": "leads_division_at", "title": "who now leads Helix\u0027s\nsensor division", "to": "sensor division;Helix Robotics Corp."}, {"arrows": "to", "from": "Lumen Sensors LiDAR units", "label": "used_in", "title": "for use in the Atlas-9", "to": "Atlas-9"}, {"arrows": "to", "from": "Ostrava Robotics", "label": "is_a", "title": "Ostrava Robotics, a Czech company", "to": "Czech company"}, {"arrows": "to", "from": "Ostrava Robotics", "label": "makes_product_line", "title": "that makes the Kestrel line of warehouse\nrobots", "to": "Kestrel line of warehouse robots"}, {"arrows": "to", "from": "Ostrava Robotics", "label": "ranked_ahead_of", "title": "behind Ostrava Robotics", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "Brightline Machines", "label": "is_subsidiary_of", "title": "Brightline Machines, a subsidiary of Orbital Dynamics", "to": "Orbital Dynamics"}, {"arrows": "to", "from": "Meridian Research", "label": "ranks", "title": "Analysts at Meridian Research\nrank Helix second", "to": "Helix Robotics Corp."}, {"arrows": "to", "from": "Helix Robotics Corp. Pune assembly plant", "label": "located_in", "title": "assembly plant in Pune, India", "to": "Pune, India"}, {"arrows": "to", "from": "Helix Robotics Corp. Pune assembly plant", "label": "began_production_in_month_year", "title": "which began producing Atlas-9 units in\nNovember 2025", "to": "November 2025"}, {"arrows": "to", "from": "Helix Robotics Corp. Pune assembly plant", "label": "produces", "title": "began producing Atlas-9 units", "to": "Atlas-9"}, {"arrows": "to", "from": "Robotics Executive of the Year", "label": "awarded_by", "title": "by the International Federation\nof Automation", "to": "International Federation of Automation"}, {"arrows": "to", "from": "Chief Operating Officer", "label": "role_at_company", "title": "Brightcart\u0027s Chief Operating Officer, Tom Lindqvist", "to": "Brightcart"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.01,
+            "damping": 0.4,
+            "gravitationalConstant": -50,
+            "springConstant": 0.08,
+            "springLength": 100
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
